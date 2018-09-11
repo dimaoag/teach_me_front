@@ -14,3 +14,11 @@ $(function() {
         " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 });
 
+$('.filter-header').on('click', function () {
+    $(this).find( ".toggle" ).toggle(10,function() {
+        $(this).find('.fa-plus').show();
+        $(this).find('.fa-minus').hide();
+    });
+});
+
+

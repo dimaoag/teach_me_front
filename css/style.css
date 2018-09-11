@@ -276,6 +276,17 @@ ul.breadcrumb li a:hover {
     box-sizing: border-box;
     margin-bottom: 35px;
 }
+a.filter-header{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f5f6;
+}
+.toggle{
+    margin:0 10px;
+    font-size: 1.2rem;
+}
 .filter h4{
     font-weight: bold;
     font-size: 1.5rem;
@@ -472,7 +483,24 @@ div.footer-nav a{
     flex-direction: column;
     justify-content: space-between;
 }
-
+.search-course-img{
+    position: relative;
+}
+.favorite-img{
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    z-index: 2;
+    border-radius: 50%;
+}
+.favorite-img i{
+    font-size: 1.5rem;
+    color: red;
+}
 .search-course-img img{
     min-width: 225px;
 }
@@ -590,6 +618,11 @@ div.footer-nav a{
     .search-course-info{
         padding: 0;
     }
+    .favorite-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media all and (max-width: 504px){
     .favorite{
@@ -601,6 +634,15 @@ div.footer-nav a{
         width: 100%;
         text-align: center;
         margin: 15px 0;
+    }
+    .favorite-img{
+        bottom: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+    }
+    .favorite-img i{
+        font-size: 1rem;
     }
 }
 
