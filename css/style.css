@@ -82,7 +82,7 @@ input[type=text], textarea {outline:none;}
     color: white;
     text-transform: uppercase;
     box-sizing: border-box;
-    border: 2px solid white;
+    border: 2px solid #f7f5f6;
     background-image: linear-gradient(-186deg, #ffcb53 0%, #fe7c04 100%);
     font-size: 1rem;
     border-radius: 2rem;
@@ -129,6 +129,7 @@ header{
 .header-1{
     background-color: black;
     color: white;
+    font-size: 1rem;
 }
 .header-1-wrap{
     padding: 7px 0;
@@ -242,12 +243,13 @@ header{
 /*breadcrumb*/
 .breadcrumbs{
     margin: 20px 0;
-    margin-top: 150px;
+    margin-top: 110px;
 }
 ul.breadcrumb {
-    padding: 10px 16px;
+    padding: 10px 10px;
     list-style: none;
     background-color: white;
+    margin-bottom: 0;
 }
 ul.breadcrumb li {
     display: inline;
@@ -671,3 +673,45 @@ div.footer-nav a{
     }
 }
 /*footer*/
+
+/*login*/
+.btn-login{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
+.btn-login:hover{
+    color: white;
+}
+.btn-login:focus{
+    outline: none;
+}
+.tab-form{
+    background-color: white;
+    display: none;
+}
+.login-title{
+    text-transform: uppercase;
+}
+.tab-form.active{
+    display: block;
+}
+.label-wrap{
+    display: flex;
+}
+label.tab{
+    color: #bd59d4;
+    display: block;
+    cursor: pointer;
+    flex-grow: 1;
+    padding: 10px 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+label.tab.active{
+    background-color: #bd59d4;
+    color: white;
+}
+
+/*login*/
