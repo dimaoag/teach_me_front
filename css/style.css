@@ -131,14 +131,13 @@ header{
     color: white;
 }
 .header-1-wrap{
-    padding: 10px 0;
+    padding: 7px 0;
     display: flex;
     justify-content: space-between;
     margin: 0 10px;
 }
 .language{
     display: flex;
-    /*align-items: center;*/
 }
 .flag{
     margin-right: 5px;
@@ -171,7 +170,7 @@ header{
     background-color: #f7f5f6;
 }
 .header-2-wrap{
-    padding: 10px;
+    padding: 5px;
 }
 .header-2-wrap .col-lg-2{
     display: flex;
@@ -198,9 +197,6 @@ header{
 .search form{
     width: 100%;
     flex-grow: 1;
-    /*display: flex;*/
-    /*justify-content: space-around;*/
-    /*flex-wrap: wrap;*/
 }
 .select-hide {
     display: none;
@@ -241,44 +237,64 @@ header{
 .hide-show{
     display: none;
 }
-
 /*header*/
+
 /*breadcrumb*/
-/* Style the list */
 .breadcrumbs{
     margin: 20px 0;
+    margin-top: 150px;
 }
 ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
     background-color: white;
 }
-
-/* Display list items side by side */
 ul.breadcrumb li {
     display: inline;
 }
-
-/* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
     padding: 8px;
     color: black;
     content: "\003e";
 }
-
-/* Add a color to all links inside the list */
 ul.breadcrumb li a {
     color: #b4b4b4;
     text-decoration: none;
 }
-
-/* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
     color: #6b6868;
     text-decoration: underline;
 }
+@media all and (max-width: 1199px){
+    .search-course-header h4{
+        padding-right: 10px;
+    }
+    header{
+        position: static;
+        z-index: 0;
+    }
+    .toggle-main{
+        display: none;
+    }
+    .breadcrumbs{
+        margin-top: 20px;
+    }
+}
 /*breadcrumb*/
 
+.menuToggle span
+{
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin-left: 10px;
+    top: -10px;
+    margin-bottom: 4px;
+    position: relative;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+}
 
 /*filter*/
 .filter-wrap{
@@ -330,7 +346,6 @@ a.filter-header{
 }
 .label-cbx .checkbox {
     position: relative;
-    /*top: 2px;*/
     float: left;
     margin-right: 8px;
     width: 20px;
@@ -371,7 +386,6 @@ a.filter-header{
     text-transform: lowercase;
     font-weight: normal;
 }
-
 .invisible {
     position: absolute;
     z-index: -1;
@@ -397,10 +411,8 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:focus, span.ui-slider-handl
 .ui-corner-all{
     outline: none;
 }
-
 .filter-date{
     background: url(../img/icon_calendar.png) no-repeat scroll 13px 13px;
-    /*background-position: right;*/
     background-position-x: 85%;
     padding-left:30px;
     border: 1px solid #C8CCD4;
@@ -529,16 +541,6 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:focus, span.ui-slider-handl
     .favorite p {
         display: none;
     }
-    .search-course-header h4{
-        padding-right: 10px;
-    }
-    header{
-        position: static;
-        z-index: 0;
-    }
-    .toggle-main{
-        display: none;
-    }
 }
 @media all and (max-width: 743px){
     .search-course-middle{
@@ -595,31 +597,7 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:focus, span.ui-slider-handl
         font-size: 1rem;
     }
 }
-
 /*search-product*/
-
-.menuToggle span
-{
-    display: block;
-    width: 25px;
-    height: 4px;
-    margin-left: 10px;
-    top: -10px;
-    margin-bottom: 4px;
-    position: relative;
-
-    background: white;
-    border-radius: 3px;
-
-    z-index: 1;
-
-    /*transform-origin: 4px 0px;*/
-
-    /*transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),*/
-    /*background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),*/
-    /*opacity 0.55s ease;*/
-}
-
 
 /*footer*/
 footer{

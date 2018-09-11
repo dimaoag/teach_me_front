@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
 	var overlayNav = $('.cd-overlay-nav'),
 		overlayContent = $('.cd-overlay-content'),
-		navigation = $('#cd-primary-nav'),
+		navigation = $('.cd-primary-nav'),
 		toggleNav = $('.cd-nav-trigger');
 
 	//inizialize navigation and content layers
