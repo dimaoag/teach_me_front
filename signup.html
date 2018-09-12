@@ -18,7 +18,7 @@
     <!--===============================================================================================-->
 
     <link rel="stylesheet" href="css/style.css">
-    <title>Login</title>
+    <title>Registration</title>
 </head>
 <body>
 <div class="wrapper">
@@ -136,55 +136,72 @@
         <div class="container-login100" style="background-image: url('img/bg-01.jpg');">
             <div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
                 <div class="dws-form">
-                    <span class="login100-form-title p-b-15 login-title">
-                           Войти как
+                    <span class="login100-form-title p-b-15 login-title signup-title">
+                           Зарегистрироваться как
                         </span>
                     <div class="label-wrap p-b-15">
                         <label class="tab active" title="tab-1">Пользователь</label>
                         <label class="tab" title="tab-2">Компания</label>
                     </div>
+
+                    <!--User form start-->
                     <form class="login100-form tab-form active" role="form">
                         <div class="form-group">
-                            <label for="phone">Телефон</label>
-                            <input type="text" data-mask="callback-catalog-phone" name="phone" class="form-control" id="phone" placeholder="Введите телефон" required>
+                            <label for="first_name">Имя *</label>
+                            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Введите имя" required>
                         </div>
                         <div class="form-group">
-                            <label for="password">Пароль</label>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="Пароль" required>
+                            <label for="last_name">Фамилия</label>
+                            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Введите фамилию">
                         </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox">Запомнить меня
-                            </label>
+                        <div class="form-group">
+                            <label for="phone">Телефон *</label>
+                            <input type="text" data-mask="callback-catalog-phone" class="form-control" id="phone" name="phone" placeholder="Введите телефон" required>
                         </div>
-                        <button class="btn btn-block login100-form-btn btn-login">Войти</button>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Пароль *</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Пароль" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password_confirm">Повторить пароль *</label>
+                            <input type="password" class="form-control" id="password_confirm" name="password_confirm" placeholder="Повторить пароль" required>
+                        </div>
+                        <button class="btn btn-block login100-form-btn btn-login">Зарегистрироваться</button>
                     </form>
+                    <!--User form end-->
 
+                    <!--Agent form start-->
                     <form class="login100-form tab-form" role="form">
                         <div class="form-group">
-                            <label for="phone1">Телефон</label>
-                            <input type="text" data-mask="callback-catalog-phone" name="phone" class="form-control" id="phone1" placeholder="Введите телефон" required>
+                            <label for="first_name">Имя *</label>
+                            <input type="text" class="form-control" id="first_name1" name="first_name" placeholder="Имя" required>
                         </div>
                         <div class="form-group">
-                            <label for="password1">Пароль</label>
+                            <label for="phone2">Телефон *</label>
+                            <input type="text" data-mask="callback-catalog-phone" name="phone" class="form-control" id="phone2" placeholder="Введите телефон" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email1">Email *</label>
+                            <input type="email" name="email" class="form-control" id="email1" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password1">Пароль *</label>
                             <input type="password" class="form-control" name="password" id="password1" placeholder="Пароль" required>
                         </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox">Запомнить меня
-                            </label>
+                        <div class="form-group">
+                            <label for="password_confirm1">Повторить пароль *</label>
+                            <input type="password" class="form-control" id="password_confirm1" name="password_confirm" placeholder="Повторить пароль" required>
                         </div>
-                        <button class="btn btn-block login100-form-btn btn-login">Войти</button>
+                        <button class="btn btn-block login100-form-btn btn-login">Зарегистрироваться</button>
                     </form>
+                    <!--Agent form end-->
                 </div>
                 <div class="m-t-40">
-                    <span>Забыли</span>
-                    <a href="#" class="txt2 hov1">
-                        пароль
-                    </a>
-                    <a href="#" class="txt2 hov1 float-r">
-                        Регистрация
-                    </a>
+                    <span class="star-require">* - обязательные поля для заполнения</span>
                 </div>
             </div>
         </div>

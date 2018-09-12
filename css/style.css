@@ -713,5 +713,14 @@ label.tab.active{
     background-color: #bd59d4;
     color: white;
 }
-
 /*login*/
+
+/*signup*/
+.signup-title{
+    font-size: 1.4rem;
+}
+.star-require{
+    font-size: 0.9rem;
+}
+
+/*signup*/
