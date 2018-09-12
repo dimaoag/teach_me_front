@@ -409,6 +409,7 @@ span.ui-slider-handle.ui-state-default.ui-corner-all{
 span.ui-slider-handle.ui-state-default.ui-corner-all:focus, span.ui-slider-handle.ui-state-default.ui-corner-all:hover{
     background-color: #933ec5;
     border-color: #933ec5;
+    cursor: pointer;
 }
 .ui-corner-all{
     outline: none;
