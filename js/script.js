@@ -42,3 +42,15 @@ $(document).ready(function () {
     })
 })(jQuery));
 
+
+$('.open-popup-more_md').magnificPopup({
+    type:'inline',
+    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+});
+
+$('.open-popup-phones_md').magnificPopup({
+    type:'inline',
+    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+});
+
+

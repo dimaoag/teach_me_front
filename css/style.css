@@ -723,5 +723,188 @@ label.tab.active{
 .star-require{
     font-size: 0.9rem;
 }
-
 /*signup*/
+
+/*course*/
+.course-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.course-header h1{
+    margin: 0;
+}
+.course-rating-wrap{
+    padding-top: 4px;
+}
+.course-price{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+.courser-info-img img{
+    width: 100%;
+}
+/*course*/
+.course-info-fixed{
+    position: sticky;
+    top: 130px;
+    right: 0;
+    font-size: 1rem;
+}
+.course-info-small{
+    display: none;
+    font-size: 1.3rem;
+}
+.courser-info-img{
+    position: relative;
+    margin-bottom: 2%;
+}
+.course-info-socs{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    width: 33%;
+    border: 1px solid #eaeaea;
+    display: flex;
+    justify-content: space-around;
+}
+.favorite-course-top{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+.favorite-course-top a i{
+    color: red;
+}
+.course-info-favorite{
+    margin: 10px 0;
+}
+.course-info-favorite a i{
+    color: red;
+    margin-right: 10px;
+}
+.course-info-favorite p{
+    color: #9d9d9d;
+}
+.course-info-socs a i.fa-instagram{
+    color: #ef017c;
+}
+.course-info-socs a i.fa-facebook{
+    color: #475993;
+}
+.course-info-socs a i.fa-vk{
+    color: #44678d;
+}
+.course-info-socs a i.fa-youtube-play{
+    color: #f44336;
+}
+.course-info-title, .course-info-address, .course-info-phone{
+    padding: 7px 0;
+}
+.course-info-location i{
+    margin-right: 10px;
+    color: #933ec5;
+}
+.course-info-footer{
+    padding: 10px;
+    border: 1px solid #933ec5;
+}
+.course-info-footer p{
+    text-align: center;
+    font-size: 0.8rem;
+}
+.course-info-footer-btn{
+    background-color: white;
+    color: #933ec5;
+    margin-top: 7px;
+    border: 2px solid #933ec5;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.course-info-footer-btn:hover{
+    color: white;
+    background-color: #933ec5;
+}
+.course-info-input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #933ec5;
+    margin: 7px 0;
+    width: 100%;
+}
+.bottom-fixed{
+    display: none;
+}
+.bottom-fixed > .left-button{
+    width: 100%;
+}
+.bottom-fixed > .right-button{
+    width: 100%;
+    margin: 0 1px;
+}
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
+.white-popup > .course-info-footer{
+    margin-top: 15px;
+}
+.phones-md a{
+    display: block;
+    margin: 5px;
+    color: #933ec5;
+    font-size: 1.5rem;
+    text-align: center;
+}
+@media all and (max-width: 1200px){
+    .course-info-fixed{
+        display: none;
+    }
+    .course-info-small{
+        display: block;
+    }
+    .bottom-fixed{
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        /*padding: 0 5%;*/
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        box-sizing: border-box;
+    }
+    .bottom-fixed a{
+        border: 2px solid #933ec5;
+        color: white;
+        font-weight: bold;
+        background-color: #933ec5;
+    }
+    .bottom-fixed a:hover{
+        color: #933ec5;
+        background-color: white;
+    }
+    .bottom-fixed a:focus{
+        color: white;
+    }
+}
+
+
+
+
