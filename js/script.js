@@ -53,4 +53,58 @@ $('.open-popup-phones_md').magnificPopup({
     midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 });
 
+$('.center').slick({
+    centerMode: true,
+    infinite: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    speed: 300,
+    prevArrow: $('.gallery-prev'),
+    nextArrow: $('.gallery-next'),
+    variableWidth: false,
+    autoplay:true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }
+    ],
+});
+
+$('.clip a').magnificPopup({
+    type: 'image'
+    // other options
+});
+
+
+// var acc = document.getElementsByClassName("accordion");
+// var i;
+//
+// for (i = 0; i < acc.length; i++) {
+//     acc[i].addEventListener("click", function() {
+//         this.classList.toggle("active");
+//         var panel = this.nextElementSibling;
+//         if (panel.style.display === "block") {
+//             panel.style.display = "none";
+//         } else {
+//             panel.style.display = "block";
+//         }
+//     });
+// }
+
+$('.accordion-title').on('click', function () {
+    $(this).find( ".toggle" ).toggle(10,function() {
+        $(this).find('.fa-angle-up').show();
+        $(this).find('.fa-angle-down').hide();
+    });
+});
+
+
+
 
