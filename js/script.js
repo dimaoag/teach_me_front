@@ -83,21 +83,6 @@ $('.clip a').magnificPopup({
 });
 
 
-// var acc = document.getElementsByClassName("accordion");
-// var i;
-//
-// for (i = 0; i < acc.length; i++) {
-//     acc[i].addEventListener("click", function() {
-//         this.classList.toggle("active");
-//         var panel = this.nextElementSibling;
-//         if (panel.style.display === "block") {
-//             panel.style.display = "none";
-//         } else {
-//             panel.style.display = "block";
-//         }
-//     });
-// }
-
 $('.accordion-title').on('click', function () {
     $(this).find( ".toggle" ).toggle(10,function() {
         $(this).find('.fa-angle-up').show();
@@ -106,5 +91,47 @@ $('.accordion-title').on('click', function () {
 });
 
 
+$('.course-related-carousel').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 300,
+    prevArrow: $('.related-prev'),
+    nextArrow: $('.related-next'),
+    variableWidth: false,
+    autoplay:true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+
+
+$('.create-review').magnificPopup({
+    type:'inline',
+    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+});
 
 

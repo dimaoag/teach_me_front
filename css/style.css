@@ -89,6 +89,7 @@ input[type=text], textarea {outline:none;}
     margin: 0;
     text-decoration: none;
     font-family: Intro, sans-serif;
+    outline: none;
     color: white;
     text-transform: uppercase;
     box-sizing: border-box;
@@ -970,18 +971,18 @@ label.tab.active{
     opacity: 1;
     padding: 10px 5px;
 }
-.gallery-controll{
+.gallery-controll, .related-controll{
     display: flex;
     justify-content: center;
 }
-.gallery-prev, .gallery-next{
+.gallery-prev, .gallery-next, .related-prev, .related-next{
     color: #933ec5;
     cursor: pointer;
 }
-.gallery-prev{
+.gallery-prev, .related-prev{
     margin-right: 10px;
 }
-.gallery-next{
+.gallery-next, .related-next{
     margin-left: 10px;
 }
 
@@ -1016,6 +1017,134 @@ label.tab.active{
     text-indent: 25px;
     text-align: justify;
 }
+
+/*---------course-related-------------*/
+.course-related{
+    margin: 10px 0;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+.course-related-item a{
+    outline: none;
+}
+.course-related-item{
+    padding: 10px;
+    border: 1px solid #933ec5;
+    margin: 10px;
+}
+.course-related-img img{
+    width: 100%;
+}
+.course-related-title{
+    color: black;
+    font-weight: bold;
+}
+.course-related-address{
+    padding: 5px 0;
+}
+.course-related-address i{
+    color: #933ec5;
+    margin-right: 7px;
+}
+.course-related-stars{
+    float: left;
+    padding: 5px 0;
+}
+.course-related-stars > .rating{
+    margin-right: 7px;
+}
+.course-related-stars p{
+    color: #999999;
+}
+.course-relate-price{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+/*---------course-reviews-------------*/
+.course-review-item{
+    margin: 20px 0;
+}
+.course-review-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.course-review-header-left h4{
+    display: inline;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+.course-review-header-left p{
+    display: inline;
+    color: #999999;
+    white-space: nowrap;
+}
+.create-review{
+    width: 33%;
+    background-image: none;
+    background-color: #933ec5;
+}
+.create-review:hover, .create-review:focus{
+    background-image: none;
+    background-color: white;
+    color: #933ec5;
+    border-color: #933ec5;
+}
+.create-review-form{
+    max-width: 700px;
+}
+.create-review-form form{
+    margin-top: 30px;
+}
+.create-review-form h2{
+    text-align: center;
+    font-weight: bold;
+}
+.review-stars-item{
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.review-stars-item p{
+    font-weight: bold;
+}
+.star-rating{
+    font-size: 0;
+}
+.star-rating__wrap{
+    display: inline-block;
+    font-size: 1rem;
+}
+.star-rating__wrap:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.star-rating__ico{
+    float: right;
+    padding-left: 2px;
+    cursor: pointer;
+    color: #FFB300;
+}
+.star-rating__ico:last-child{
+    padding-left: 0;
+}
+.star-rating__input{
+    display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before
+{
+    content: "\f005";
+}
+
 
 @media all and (max-width: 1200px){
     .course-info-fixed{
