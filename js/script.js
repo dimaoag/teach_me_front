@@ -154,3 +154,14 @@ $('.favorite-toggle').on('click', function () {
 //         x.classList['value'] = 'fa fa-heart-o';
 //     }
 // }
+
+//feedback-form
+$( ".feedback-form" ).submit(function( event ) {
+    event.preventDefault();
+    $.magnificPopup.open({
+        items: {
+            src: '#feedback_modal'
+        },
+        type: 'inline'
+    });
+});

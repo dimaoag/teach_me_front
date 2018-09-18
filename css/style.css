@@ -112,6 +112,19 @@ input[type=text], textarea {outline:none;}
     background-color: white;
     transition: top 1s ease-out 0.5s;
 }
+.button-pure{
+    background-image: none;
+    background-color: #933ec5;
+    border-color: #933ec5;
+    color: white;
+    outline: none;
+}
+.button-pure:hover, .button-pure:focus{
+    background-color: white;
+    border-color: #933ec5;
+    color: #933ec5;
+    outline: none;
+}
 .orange-color{
     color: #ff7d05;
 }
@@ -895,6 +908,7 @@ label.tab.active{
     width: auto;
     max-width: 500px;
     margin: 20px auto;
+    border-radius: 10px;
 }
 .white-popup > .course-info-footer{
     margin-top: 15px;
@@ -1222,6 +1236,29 @@ label.tab.active{
     }
 }
 
+/*---------feedback-------------*/
+.feedback-title{
+    text-align: center;
+    padding: 10px 0;
+}
+.feedback-form{
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.feedback_modal h2{
+    font-weight: bold;
+    text-align: center;
+}
+.feedback_modal i{
+    display: block;
+    text-align: center;
+    font-size: 5rem;
+    color: #45b272;
+}
+.feedback_modal p{
+    text-align: center;
+    padding: 15px 0;
+}
 
 
 
