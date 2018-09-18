@@ -165,3 +165,12 @@ $( ".feedback-form" ).submit(function( event ) {
         type: 'inline'
     });
 });
+
+
+$(document).ready(function () {
+    $('.cabinet-company').on('click', '.tab-company', function () {
+        $('.cabinet-company').find('.active').removeClass('active');
+        $(this).addClass('active');
+        $('.tab-cabinet-container').eq($(this).index()).addClass(' active');
+    });
+});

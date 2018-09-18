@@ -31,7 +31,7 @@ html {
     font-size: 16px;
 }
 body {
-    font-family: 'Bender', Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     color: black;
     text-align: left;
     font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
@@ -715,14 +715,14 @@ div.footer-nav a{
 .btn-login:focus{
     outline: none;
 }
-.tab-form{
+.tab-form, .tab-cabinet-container{
     background-color: white;
     display: none;
 }
 .login-title{
     text-transform: uppercase;
 }
-.tab-form.active{
+.tab-form.active, .tab-cabinet-container.active{
     display: block;
 }
 .label-wrap{
@@ -1260,5 +1260,128 @@ label.tab.active{
     padding: 15px 0;
 }
 
+/*---------menu-2-------------*/
+.header-2-menu-2-wrap{
+    display: flex;
+}
+.menu-2-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: inherit;
+}
+.menu-2-logo-sec-wrap{
+    justify-content: center;
+    padding: 7px 0;
+}
+.menu-2-item a{
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
 
+}
+.menu-2-search input {
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    height: 30px;
+    padding: 4px 8px;
+    position: absolute;
+    width: 50%;
+}
+input:focus {
+    outline: none;
+}
 
+button {
+    text-align: center;
+}
+button:focus {
+    outline: none;
+}
+button.btn-search, button.btn-reset {
+    background: #933ec5;
+    border: none;
+    height: 30px;
+    font-size: 12px;
+    padding: 4px;
+    position: absolute;
+    width: 30px;
+}
+
+.sample {
+    float: left;
+    height: 100%;
+    /*margin: 0 8%;*/
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+.sample.one input, .sample.two input {
+    border-radius: 15px;
+    right: 0;
+    transition: all .3s ease-in-out;
+    width: 50%;
+}
+.sample.one input:focus, .sample.two input:focus {
+    width: 100%;
+}
+.sample.one input:focus ~ button.btn-search, .sample.two input:focus ~ button.btn-search {
+    background: #933ec5;
+    color: #fff;
+}
+.sample.one input:focus ~ button.btn-reset, .sample.two input:focus ~ button.btn-reset {
+    right: -22px;
+}
+.sample.one button, .sample.two button {
+    transition: all .3s ease-in-out;
+}
+.sample.one button.btn-search, .sample.two button.btn-search {
+    background: #ccc;
+    border-radius: 50%;
+    height: 26px;
+    right: 2px;
+    top: 2px;
+    transition: all .3s ease-in-out;
+    width: 26px;
+}
+.sample.one button.btn-reset, .sample.two button.btn-reset {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    font-size: 10px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    z-index: -1;
+}
+@media all and (max-width: 992px){
+    .header-2-menu-2-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-2-wrap{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .menu-2-item{
+        width: 100%;
+        text-align: center;
+    }
+    .sample {
+        margin-top: -10px;
+        position: relative;
+    }
+    .menu-2-search input {
+        position: relative;
+        float: right;
+    }
+    .sample.one input, .sample.two input {
+        width: 100%;
+    }
+}
