@@ -135,3 +135,22 @@ $('.create-review').magnificPopup({
 });
 
 
+$('.favorite-toggle').on('click', function () {
+    if ($(this).html().trim() == '<i class="fa fa-heart-o"></i>') {
+        $(this).html('<i class="fa fa-heart"></i>');
+    }
+    else {
+        $(this).html('<i class="fa fa-heart-o"></i>');
+    }
+    return false;
+});
+
+// function favoriteToggle(x) {
+//     if (x.classList['value'] === "fa fa-heart-o"){
+//         x.classList['value'] = 'fa';
+//         x.classList.toggle("fa-heart");
+//     } else {
+//         x.classList.toggle("fa-heart");
+//         x.classList['value'] = 'fa fa-heart-o';
+//     }
+// }
