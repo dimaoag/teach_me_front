@@ -1528,3 +1528,9 @@ button.btn-search, button.btn-reset {
     }
 }
 
+/*---------add-course-------------*/
+.add-course h1{
+    padding: 25px 0;
+}
+
+
