@@ -108,45 +108,240 @@
     <main>
         <div class="container">
             <div class="row cabinet-company">
-                <div class="col-md-3">
-                    <label class="tab-company active">Пользователь</label>
-                    <label class="tab-company">Компания</label>
+                <div class="col-md-3 tab-labels">
+                    <label class="tab-company active" title="Мои курсы"><span class="tab-company-text">Мои курсы</span><span class="tab-company-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span></label>
+                    <label class="tab-company" title="Заявки"><span class="tab-company-text">Заявки</span><span class="tab-company-icon"><i class="fa fa-list" aria-hidden="true"></i></span></label>
+                    <label class="tab-company" title="Основная информация"><span class="tab-company-text">Основная информация</span><span class="tab-company-icon"><i class="fa fa-address-card" aria-hidden="true"></i></span></label>
+                    <label class="tab-company" title="Услуги и платежи"><span class="tab-company-text">Услуги и платежи</span><span class="tab-company-icon"><i class="fa fa-credit-card" aria-hidden="true"></i></span></label>
+                    <label class="tab-company" title="Настройки"><span class="tab-company-text">Настройки</span><span class="tab-company-icon"><i class="fa fa-cogs" aria-hidden="true"></i></span></label>
                 </div>
                 <div class="col-md-9">
-                    <form class="tab-cabinet-container active" role="form">
-                        <div class="form-group">
-                            <label for="phone">Телефон</label>
-                            <input type="text" data-mask="callback-catalog-phone" name="phone" class="form-control" id="phone" placeholder="Введите телефон" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Пароль</label>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="Пароль" required>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox">Запомнить меня
-                            </label>
-                        </div>
-                        <button class="btn btn-block login100-form-btn btn-login">Войти</button>
-                    </form>
+                    <div class="tab-cabinet-container active">
+                        <div class="tab-my-courses">
+                            <div class="my-courses-header">
+                                <p>Количество публиций: <span>3</span></p>
+                                <button class="button">Добавить курс</button>
+                            </div>
+                            <div class="my-courses-wrap">
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
+                                            <div class="course-orders">
+                                                <span>25</span>
+                                                <p>заявок</p>
+                                            </div>
+                                        </div>
+                                        <div class="course-status">
+                                            <div class="course-status-name">
+                                                Статус
+                                            </div>
+                                            <div class="course-status-value">
+                                                18.09.18 - 18.10.18
+                                            </div>
+                                        </div>
+                                        <div class="course-control">
+                                            <div class="left">
+                                                <a href="#" class="edit">Редактировать</a>
+                                                <a href="#" class="remove">Деактивировать</a>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" class="add">Активировать</a>
+                                            </div>
 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
+                                            <div class="course-orders">
+                                                <span>25</span>
+                                                <p>заявок</p>
+                                            </div>
+                                        </div>
+                                        <div class="course-status">
+                                            <div class="course-status-name">
+                                                Статус
+                                            </div>
+                                            <div class="course-status-value">
+                                                18.09.18 - 18.10.18
+                                            </div>
+                                        </div>
+                                        <div class="course-control">
+                                            <div class="left">
+                                                <a href="#" class="edit">Редактировать</a>
+                                                <a href="#" class="remove">Деактивировать</a>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" class="add">Активировать</a>
+                                            </div>
 
-                    <form class="tab-cabinet-container" role="form">
-                        <div class="form-group">
-                            <label for="phone">Телефdsfdsfd</label>
-                            <input type="text" data-mask="callback-catalog-phone" name="phone" class="form-control" id="phone" placeholder="Введите телефон" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
+                                            <div class="course-orders">
+                                                <span>25</span>
+                                                <p>заявок</p>
+                                            </div>
+                                        </div>
+                                        <div class="course-status">
+                                            <div class="course-status-name">
+                                                Статус
+                                            </div>
+                                            <div class="course-status-value">
+                                                18.09.18 - 18.10.18
+                                            </div>
+                                        </div>
+                                        <div class="course-control">
+                                            <div class="left">
+                                                <a href="#" class="edit">Редактировать</a>
+                                                <a href="#" class="remove">Деактивировать</a>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" class="add">Активировать</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
+                                            <div class="course-orders">
+                                                <span>25</span>
+                                                <p>заявок</p>
+                                            </div>
+                                        </div>
+                                        <div class="course-status">
+                                            <div class="course-status-name">
+                                                Статус
+                                            </div>
+                                            <div class="course-status-value">
+                                                18.09.18 - 18.10.18
+                                            </div>
+                                        </div>
+                                        <div class="course-control">
+                                            <div class="left">
+                                                <a href="#" class="edit">Редактировать</a>
+                                                <a href="#" class="remove">Деактивировать</a>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" class="add">Активировать</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
+                                            <div class="course-orders">
+                                                <span>25</span>
+                                                <p>заявок</p>
+                                            </div>
+                                        </div>
+                                        <div class="course-status">
+                                            <div class="course-status-name">
+                                                Статус
+                                            </div>
+                                            <div class="course-status-value">
+                                                18.09.18 - 18.10.18
+                                            </div>
+                                        </div>
+                                        <div class="course-control">
+                                            <div class="left">
+                                                <a href="#" class="edit">Редактировать</a>
+                                                <a href="#" class="remove">Деактивировать</a>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" class="add">Активировать</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
+                                            <div class="course-orders">
+                                                <span>25</span>
+                                                <p>заявок</p>
+                                            </div>
+                                        </div>
+                                        <div class="course-status">
+                                            <div class="course-status-name">
+                                                Статус
+                                            </div>
+                                            <div class="course-status-value">
+                                                18.09.18 - 18.10.18
+                                            </div>
+                                        </div>
+                                        <div class="course-control">
+                                            <div class="left">
+                                                <a href="#" class="edit">Редактировать</a>
+                                                <a href="#" class="remove">Деактивировать</a>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" class="add">Активировать</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="password">Парол sdfsdfds</label>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="Пароль" required>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox">Запомнить меня
-                            </label>
-                        </div>
-                        <button class="btn btn-block login100-form-btn btn-login">Войdsfdsfти</button>
-                    </form>
+                    </div>
+                    <div class="tab-cabinet-container">
+                        <h1>Tab 2</h1>
+                    </div>
+                    <div class="tab-cabinet-container">
+                        <h1>Tab 3</h1>
+                    </div>
+                    <div class="tab-cabinet-container">
+                        <h1>Tab 4</h1>
+                    </div>
+                    <div class="tab-cabinet-container">
+                        <h1>Tab 5</h1>
+                    </div>
                 </div>
             </div>
         </div>

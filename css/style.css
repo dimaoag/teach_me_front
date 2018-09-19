@@ -1385,3 +1385,146 @@ button.btn-search, button.btn-reset {
         width: 100%;
     }
 }
+
+/*---------cabinet-company-------------*/
+.cabinet-company{
+    margin: 50px 0;
+    min-height: 65vh;
+}
+.tab-company{
+    display: block;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px 0;
+}
+.tab-company.active{
+    color: #933ec5;
+}
+.my-courses-header{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.my-courses-header p{
+    height: inherit;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    color: #933ec5;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+.my-courses-header span{
+    margin-left: 7px;
+    color: black;
+}
+.my-courses-header button{
+    white-space: nowrap;
+}
+.tab-my-courses .search-course-info{
+    width: 100%;
+}
+.tab-my-courses .search-course-header{
+    margin-bottom: 0;
+}
+.tab-my-courses .search-course-header h4{
+    flex-basis: 225px;
+}
+.course-orders{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.course-orders span{
+    color: #933ec5;
+}
+.course-status{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.course-status-name{
+    color: #999999;
+}
+.course-control {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.course-control a{
+    padding: 10px 0;
+}
+.course-control .left a{
+    padding-right: 25px;
+}
+.course-control .edit{
+    color: black;
+}
+.course-control .remove{
+    color: #f73939;
+}
+.course-control .add{
+    color: #933ec5;
+}
+.tab-company-icon{
+    display: none;
+}
+@media all and (max-width: 991px){
+    .my-courses-header{
+        margin-top: 15px;
+    }
+    .cabinet-company {
+        margin-top: 10px;
+    }
+    .tab-company.active{
+        color: white;
+        background-color: #933ec5;
+        border-radius: 5px;
+    }
+    .tab-labels{
+        z-index: 10;
+        position: sticky;
+        top: -1px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .tab-labels label{
+        padding: 5px 5px;
+        white-space: nowrap;
+    }
+}
+@media all and (max-width: 660px){
+    .tab-my-courses .search-course-header{
+        margin-bottom: 10px;
+    }
+    .tab-labels{
+        padding: 10px 0;
+    }
+    .tab-company{
+        flex-grow: 1;
+    }
+    .tab-company-text{
+        display: none;
+    }
+    .tab-company-icon{
+        display: block;
+        text-align: center;
+
+    }
+}
+@media all and (max-width: 467px){
+    .my-courses-header{
+        padding: 15px 0;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+    }
+}
+@media all and (max-width: 373px){
+    .course-orders{
+        margin-top: 15px;
+    }
+}
+
