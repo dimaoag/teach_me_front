@@ -1529,8 +1529,68 @@ button.btn-search, button.btn-reset {
 }
 
 /*---------add-course-------------*/
+.add-course .panel{
+    border: none;
+    padding-top: 10px;
+}
+.add-course .nav-tabs{
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+}
+.add-course .nav-item{
+    font-size: 1.5rem;
+}
+.inactive_tab1{
+    color: #999999;
+}
+.active_tab1{
+    color: #933ec5;
+}
 .add-course h1{
     padding: 25px 0;
 }
+.add-course .form-horizontal .control-label {
+    text-align: left;
+}
+.step-1 .form-control{
+    border: none;
+    border-radius: 0;
+    background-color: white;
+    box-shadow: none;
+    border-bottom: 1px solid #933ec5;
+    font-size: 1rem;
+    color: black;
+}
+.add-course-price-field{
+    display: flex;
+}
+.add-course-price-field p{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.step-1 .bottom-block{
+    margin-top: 10%;
+}
+.step-1 .upload-image{
+    padding-left: 15px;
+}
+.step-2 h2{
+    padding-left: 15px;
+}
+.step-2 textarea{
+    font-size: 1rem;
+    color: black;
+}
+.step-2 button{
+    /*width: 50%;*/
+}
+.step-2-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 

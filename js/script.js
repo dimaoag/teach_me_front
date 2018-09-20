@@ -179,57 +179,120 @@ $(document).ready(function () {
 
 $(document).ready(function(){
 
-    $('#btn_login_details').click(function(){
+    $('#btn_main_info').click(function(){
 
-        var error_email = '';
-        var error_password = '';
-        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        var error_photo = '';
+        var error_name = '';
+        var error_city = '';
+        var error_category = '';
+        var error_price = '';
+        var error_type_education = '';
+        var error_form_education = '';
+        var error_quantity_group = '';
+        var error_level = '';
+        var error_result = '';
 
-        if($.trim($('#email').val()).length == 0)
-        {
-            error_email = 'Email is required';
-            $('#error_email').text(error_email);
-            $('#email').addClass('has-error');
+        // var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        var filter_price = /^[0-9.]{1,}$/;
+
+        if($.trim($('.photo_course').val()).length == 0) {
+            error_photo = 'Загрузите пожалуйста фото курса';
+            $('#error_photo').text(error_photo);
+        } else {
+            error_photo = '';
+            $('#error_photo').text(error_photo);
         }
-        else
-        {
-            if (!filter.test($('#email').val()))
-            {
-                error_email = 'Invalid Email';
-                $('#error_email').text(error_email);
-                $('#email').addClass('has-error');
+
+        if($.trim($('#name').val()).length == 0) {
+            error_name = 'Введите названия курса';
+            $('#error_name').text(error_name);
+        } else {
+            error_name = '';
+            $('#error_name').text(error_name);
+        }
+
+        if($('#city').val() == '0') {
+            error_city = 'Выберите город';
+            $('#error_city').text(error_city);
+        } else {
+            error_city = '';
+            $('#error_city').text(error_city);
+        }
+
+        if($('#category').val() == '0') {
+            error_category = 'Выберите категорию';
+            $('#error_category').text(error_category);
+        } else {
+            error_category = '';
+            $('#error_category').text(error_category);
+        }
+
+        if($.trim($('#price').val()).length == 0) {
+            error_price = 'Введите цену курса';
+            $('#error_price').text(error_price);
+        } else {
+            if (!filter_price.test($('#price').val())) {
+                error_price = 'Введите коректную цену';
+                $('#error_price').text(error_price);
+            } else {
+                error_price = '';
+                $('#error_price').text(error_price);
             }
-            else
-            {
-                error_email = '';
-                $('#error_email').text(error_email);
-                $('#email').removeClass('has-error');
-            }
         }
 
-        if($.trim($('#password').val()).length == 0)
-        {
-            error_password = 'Password is required';
-            $('#error_password').text(error_password);
-            $('#password').addClass('has-error');
-        }
-        else
-        {
-            error_password = '';
-            $('#error_password').text(error_password);
-            $('#password').removeClass('has-error');
+        if($('#type_education').val() == '0') {
+            error_type_education = 'Выберите тип курса';
+            $('#error_type_education').text(error_type_education);
+        } else {
+            error_type_education = '';
+            $('#error_type_education').text(error_type_education);
         }
 
-        if(error_email != '' || error_password != '')
+        if($('#form_education').val() == '0') {
+            error_form_education = 'Выберите форму курса';
+            $('#error_form_education').text(error_form_education);
+        } else {
+            error_form_education = '';
+            $('#error_form_education').text(error_form_education);
+        }
+
+        if($('#quantity_group').val() == '0') {
+            error_quantity_group = 'Выберите групу';
+            $('#error_quantity_group').text(error_quantity_group);
+        } else {
+            error_quantity_group = '';
+            $('#error_quantity_group').text(error_quantity_group);
+        }
+
+        if($('#level').val() == '0') {
+            error_level = 'Выберите уровень подготовки';
+            $('#error_level').text(error_level);
+        } else {
+            error_level = '';
+            $('#error_level').text(error_level);
+        }
+
+        if($('#result').val() == '0') {
+            error_result = 'Выберите документ';
+            $('#error_result').text(error_result);
+        } else {
+            error_result = '';
+            $('#error_result').text(error_result);
+        }
+
+
+        if(error_photo != '' || error_name != '' || error_category != '' || error_city != '' || error_price != ''
+            || error_type_education != '' || error_form_education != '' || error_quantity_group != ''
+            || error_level != '' || error_result != '')
         {
             return false;
         }
         else
         {
-            $('#list_login_details').removeClass('active active_tab1');
-            $('#list_login_details').removeAttr('href data-toggle');
-            $('#login_details').removeClass('active');
-            $('#list_login_details').addClass('inactive_tab1');
+            $('#list_main_info').removeClass('active active_tab1');
+            $('#list_main_info').removeAttr('href data-toggle');
+            $('#main_info').removeClass('active');
+            $('#list_main_info').addClass('inactive_tab1');
             $('#list_personal_details').removeClass('inactive_tab1');
             $('#list_personal_details').addClass('active_tab1 active');
             $('#list_personal_details').attr('href', '#personal_details');
@@ -243,44 +306,25 @@ $(document).ready(function(){
         $('#list_personal_details').removeAttr('href data-toggle');
         $('#personal_details').removeClass('active in');
         $('#list_personal_details').addClass('inactive_tab1');
-        $('#list_login_details').removeClass('inactive_tab1');
-        $('#list_login_details').addClass('active_tab1 active');
-        $('#list_login_details').attr('href', '#login_details');
-        $('#list_login_details').attr('data-toggle', 'tab');
-        $('#login_details').addClass('active in');
+        $('#list_main_info').removeClass('inactive_tab1');
+        $('#list_main_info').addClass('active_tab1 active');
+        $('#list_main_info').attr('href', '#login_details');
+        $('#list_main_info').attr('data-toggle', 'tab');
+        $('#main_info').addClass('active in');
     });
 
     $('#btn_personal_details').click(function(){
-        var error_first_name = '';
-        var error_last_name = '';
+        var error_description = '';
 
-        if($.trim($('#first_name').val()).length == 0)
-        {
-            error_first_name = 'First Name is required';
-            $('#error_first_name').text(error_first_name);
-            $('#first_name').addClass('has-error');
-        }
-        else
-        {
-            error_first_name = '';
-            $('#error_first_name').text(error_first_name);
-            $('#first_name').removeClass('has-error');
+        if($.trim($('#description').val()).length == 0) {
+            error_description = 'Введите описание о курсе';
+            $('#error_description').text(error_description);
+        } else {
+            error_description = '';
+            $('#error_description').text(error_description);
         }
 
-        if($.trim($('#last_name').val()).length == 0)
-        {
-            error_last_name = 'Last Name is required';
-            $('#error_last_name').text(error_last_name);
-            $('#last_name').addClass('has-error');
-        }
-        else
-        {
-            error_last_name = '';
-            $('#error_last_name').text(error_last_name);
-            $('#last_name').removeClass('has-error');
-        }
-
-        if(error_first_name != '' || error_last_name != '')
+        if(error_description != '')
         {
             return false;
         }
@@ -356,7 +400,18 @@ $(document).ready(function(){
         {
             $('#btn_contact_details').attr("disabled", "disabled");
             $(document).css('cursor', 'prgress');
-            $("#register_form").submit();
+            $("#add_course_form").submit();
         }
     });
+});
+
+
+$("#photo_course").spartanMultiImagePicker({
+    fieldName:  'photo_course',
+    maxCount : 1,
+});
+
+$("#gallery").spartanMultiImagePicker({
+    fieldName:  'galleryPhotos[]',
+    maxCount : 10,
 });
