@@ -1526,6 +1526,31 @@ button.btn-search, button.btn-reset {
 .tab-setting .form-item{
     padding-bottom: 50px;
 }
+
+.tab-price h2{
+    padding-bottom: 15px;
+}
+.tab-price-my-quantity{
+    color: #933ec5;
+    padding: 15px 0;
+}
+.form-price{
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    display: flex;
+    border: 1px solid #933ec5;
+    border-radius: 5px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.tab-price .price-select{
+    background-color: white;
+    width: 100%;
+    outline: none;
+    text-align-last:center;
+    border: none;
+}
 @media all and (max-width: 991px){
     .my-courses-header{
         margin-top: 15px;
@@ -1557,6 +1582,9 @@ button.btn-search, button.btn-reset {
     .tab-setting h2{
         padding:  30px 0;
     }
+    .tab-price h2{
+        padding: 25px 0;
+    }
 }
 @media all and (max-width: 660px){
     .tab-my-courses .search-course-header{
@@ -1583,6 +1611,14 @@ button.btn-search, button.btn-reset {
         justify-content: flex-start;
         flex-direction: column-reverse;
     }
+    .form-price{
+        flex-direction: column;
+        text-align: center;
+    }
+    .form-price-item{
+        padding: 20px 0;
+    }
+
 }
 @media all and (max-width: 373px){
     .course-orders{
