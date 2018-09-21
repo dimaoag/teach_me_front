@@ -108,17 +108,12 @@
     <main>
         <div class="container add-course">
             <div class="row">
-                <div class="col-md-12">
-                    <h1>Добавить новый курс</h1>
-                </div>
-            </div>
-            <div class="row">
                 <form method="post" id="add_course_form">
                     <ul class="nav nav-tabs">
                         <li class="nav-item active_tab1" id="list_main_info">
                             Краткая информация
                         </li>
-                        <li class="nav-item inactive_tab1" id="list_personal_details">
+                        <li class="nav-item inactive_tab1" id="list_description_info">
                             Описания и галерея
                         </li>
                     </ul>
@@ -266,7 +261,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade step-2" id="personal_details">
+                        <div class="tab-pane fade step-2" id="description_info">
                             <div class="panel panel-default form-horizontal">
                                 <h2>Описание курса</h2>
                                 <div class="panel-body">
@@ -289,12 +284,12 @@
                                     <div class="step-2-buttons">
                                         <div class="col-xs-6">
                                             <div align="center">
-                                                <button type="button" name="previous_btn_personal_details" id="previous_btn_personal_details" class="btn btn-block btn-default btn-lg">Назад</button>
+                                                <button type="button" name="previous_btn_description" id="previous_btn_description" class="btn btn-block btn-default btn-lg">Назад</button>
                                             </div>
                                         </div>
                                         <div class="col-xs-6">
                                             <div align="center">
-                                                <button type="button" name="btn_personal_details" id="btn_personal_details" class="btn btn-block button-pure btn-lg">Далее</button>
+                                                <button type="submit" name="btn_description" id="btn_description" class="btn btn-block button-pure btn-lg">Сохранить</button>
                                             </div>
                                         </div>
                                     </div>

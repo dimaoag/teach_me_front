@@ -293,27 +293,27 @@ $(document).ready(function(){
             $('#list_main_info').removeAttr('href data-toggle');
             $('#main_info').removeClass('active');
             $('#list_main_info').addClass('inactive_tab1');
-            $('#list_personal_details').removeClass('inactive_tab1');
-            $('#list_personal_details').addClass('active_tab1 active');
-            $('#list_personal_details').attr('href', '#personal_details');
-            $('#list_personal_details').attr('data-toggle', 'tab');
-            $('#personal_details').addClass('active in');
+            $('#list_description_info').removeClass('inactive_tab1');
+            $('#list_description_info').addClass('active_tab1 active');
+            $('#list_description_info').attr('href', '#description_info');
+            $('#list_description_info').attr('data-toggle', 'tab');
+            $('#description_info').addClass('active in');
         }
     });
 
-    $('#previous_btn_personal_details').click(function(){
-        $('#list_personal_details').removeClass('active active_tab1');
-        $('#list_personal_details').removeAttr('href data-toggle');
-        $('#personal_details').removeClass('active in');
-        $('#list_personal_details').addClass('inactive_tab1');
+    $('#previous_btn_description').click(function(){
+        $('#list_description_info').removeClass('active active_tab1');
+        $('#list_description_info').removeAttr('href data-toggle');
+        $('#description_info').removeClass('active in');
+        $('#list_description_info').addClass('inactive_tab1');
         $('#list_main_info').removeClass('inactive_tab1');
         $('#list_main_info').addClass('active_tab1 active');
-        $('#list_main_info').attr('href', '#login_details');
+        $('#list_main_info').attr('href', '#main_info');
         $('#list_main_info').attr('data-toggle', 'tab');
         $('#main_info').addClass('active in');
     });
 
-    $('#btn_personal_details').click(function(){
+    $('#btn_description').click(function(){
         var error_description = '';
 
         if($.trim($('#description').val()).length == 0) {
@@ -328,81 +328,8 @@ $(document).ready(function(){
         {
             return false;
         }
-        else
-        {
-            $('#list_personal_details').removeClass('active active_tab1');
-            $('#list_personal_details').removeAttr('href data-toggle');
-            $('#personal_details').removeClass('active');
-            $('#list_personal_details').addClass('inactive_tab1');
-            $('#list_contact_details').removeClass('inactive_tab1');
-            $('#list_contact_details').addClass('active_tab1 active');
-            $('#list_contact_details').attr('href', '#contact_details');
-            $('#list_contact_details').attr('data-toggle', 'tab');
-            $('#contact_details').addClass('active in');
-        }
     });
 
-    $('#previous_btn_contact_details').click(function(){
-        $('#list_contact_details').removeClass('active active_tab1');
-        $('#list_contact_details').removeAttr('href data-toggle');
-        $('#contact_details').removeClass('active in');
-        $('#list_contact_details').addClass('inactive_tab1');
-        $('#list_personal_details').removeClass('inactive_tab1');
-        $('#list_personal_details').addClass('active_tab1 active');
-        $('#list_personal_details').attr('href', '#personal_details');
-        $('#list_personal_details').attr('data-toggle', 'tab');
-        $('#personal_details').addClass('active in');
-    });
-
-    $('#btn_contact_details').click(function(){
-        var error_address = '';
-        var error_mobile_no = '';
-        var mobile_validation = /^\d{10}$/;
-        if($.trim($('#address').val()).length == 0)
-        {
-            error_address = 'Address is required';
-            $('#error_address').text(error_address);
-            $('#address').addClass('has-error');
-        }
-        else
-        {
-            error_address = '';
-            $('#error_address').text(error_address);
-            $('#address').removeClass('has-error');
-        }
-
-        if($.trim($('#mobile_no').val()).length == 0)
-        {
-            error_mobile_no = 'Mobile Number is required';
-            $('#error_mobile_no').text(error_mobile_no);
-            $('#mobile_no').addClass('has-error');
-        }
-        else
-        {
-            if (!mobile_validation.test($('#mobile_no').val()))
-            {
-                error_mobile_no = 'Invalid Mobile Number';
-                $('#error_mobile_no').text(error_mobile_no);
-                $('#mobile_no').addClass('has-error');
-            }
-            else
-            {
-                error_mobile_no = '';
-                $('#error_mobile_no').text(error_mobile_no);
-                $('#mobile_no').removeClass('has-error');
-            }
-        }
-        if(error_address != '' || error_mobile_no != '')
-        {
-            return false;
-        }
-        else
-        {
-            $('#btn_contact_details').attr("disabled", "disabled");
-            $(document).css('cursor', 'prgress');
-            $("#add_course_form").submit();
-        }
-    });
 });
 
 

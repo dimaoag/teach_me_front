@@ -1534,6 +1534,7 @@ button.btn-search, button.btn-reset {
     padding-top: 10px;
 }
 .add-course .nav-tabs{
+    padding: 30px 0;
     border-bottom: none;
     display: flex;
     justify-content: space-between;
@@ -1591,6 +1592,11 @@ button.btn-search, button.btn-reset {
     display: flex;
     justify-content: space-between;
 }
-
+@media all and (max-width: 500px){
+    .add-course .nav-item{
+        font-size: 1rem;
+        text-align: center;
+    }
+}
 
 
