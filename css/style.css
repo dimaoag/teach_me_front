@@ -57,6 +57,7 @@ a:focus, a:active {
 }
 h1, h2, h3, h4, h5, h6{
     font-weight:normal;
+    margin: 0;
 }
 img{
     max-width:100%;
@@ -1394,8 +1395,8 @@ button.btn-search, button.btn-reset {
 .tab-company{
     display: block;
     cursor: pointer;
-    margin: 0;
-    padding: 10px 0;
+    padding: 5px 0;
+    margin: 10px 0;
 }
 .tab-company.active{
     color: #933ec5;
@@ -1470,6 +1471,46 @@ button.btn-search, button.btn-reset {
 .tab-company-icon{
     display: none;
 }
+
+.add-photo-profile{
+    margin-top: 20px;
+}
+.add-photo-profile h4{
+    padding: 10px 0;
+}
+.main-form-field-item{
+    margin-bottom: 20px;
+}
+.main-info-form-field{
+    display: flex;
+}
+.main-info-form-field i{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #933ec5;
+}
+.main-info-field-phone, .main-info-field-socs{
+    padding: 5px 0;
+}
+.main-info-field-phone input{
+    color: #933ec5;
+}
+.instagram-field i{
+    color: #ef017c;
+}
+.facebook-field i{
+    color: #475993;
+}
+.vk-field i{
+    color: #44678d;
+}
+.youtube-field i{
+    color: #f44336;
+}
+
+
 @media all and (max-width: 991px){
     .my-courses-header{
         margin-top: 15px;
@@ -1494,6 +1535,9 @@ button.btn-search, button.btn-reset {
     .tab-labels label{
         padding: 5px 5px;
         white-space: nowrap;
+    }
+    .tab-main-info-title{
+        padding: 15px 0;
     }
 }
 @media all and (max-width: 660px){
@@ -1526,6 +1570,9 @@ button.btn-search, button.btn-reset {
     .course-orders{
         margin-top: 15px;
     }
+    label.file-upload{
+        height: 100px;
+    }
 }
 
 /*---------add-course-------------*/
@@ -1554,7 +1601,7 @@ button.btn-search, button.btn-reset {
 .add-course .form-horizontal .control-label {
     text-align: left;
 }
-.step-1 .form-control{
+.step-1 .form-control, .tab-main-info .form-control{
     border: none;
     border-radius: 0;
     background-color: white;

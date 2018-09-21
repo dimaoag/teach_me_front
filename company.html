@@ -333,8 +333,98 @@
                     <div class="tab-cabinet-container">
                         <h1>Tab 2</h1>
                     </div>
-                    <div class="tab-cabinet-container">
-                        <h1>Tab 3</h1>
+                    <div class="tab-cabinet-container tab-main-info">
+                        <h2 class="tab-main-info-title">Добавьте основную информацию о себе</h2>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <form action="#">
+                                    <div class="add-photo-profile">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <h4>Выберите изображения организации</h4>
+                                                    <div class="row">
+                                                        <div id="photo_profile_company"></div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-sm-12 main-form-field-item">
+                                                <label for="name">Название организации</label>
+                                                <input type="text" class="form-control" id="name" placeholder="Названия">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-sm-6 main-form-field-item">
+                                                <label for="region">Регион</label>
+                                                <select class="form-control" name="region" id="region">
+                                                    <option value="0">Выберите город</option>
+                                                    <option value="1">Киев</option>
+                                                    <option value="2">Винница</option>
+                                                    <option value="3">Одесса</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-sm-10 main-form-field-item">
+                                                <label for="address">Адрес</label>
+                                                <div class="main-info-form-field">
+                                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                    <input type="text" class="form-control" id="address" placeholder="Названия">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-sm-5 main-form-field-item">
+                                                <div class="main-info-form-field main-info-field-phone">
+                                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                                    <input type="text" class="form-control" data-mask="callback-catalog-phone" value="979746559" name="phone_1" placeholder="+38 ( ___ ) - ____ - __ - __">
+                                                </div>
+                                                <div class="main-info-form-field main-info-field-phone">
+                                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                                    <input type="text" class="form-control" name="phone_2" data-mask="callback-catalog-phone" placeholder="+38 ( ___ ) - ____ - __ - __">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-sm-10 main-form-field-item">
+                                                <label>Ссылки на соц сети</label>
+                                                <div class="main-info-form-field main-info-field-socs instagram-field">
+                                                    <i class="fa fa-instagram"></i>
+                                                    <input type="text" class="form-control" name="link_instagram">
+                                                </div>
+                                                <div class="main-info-form-field main-info-field-socs facebook-field">
+                                                    <i class="fa fa-facebook"></i>
+                                                    <input type="text" class="form-control" name="link_facebook">
+                                                </div>
+                                                <div class="main-info-form-field main-info-field-socs vk-field">
+                                                    <i class="fa fa-vk"></i>
+                                                    <input type="text" class="form-control" name="link_vk">
+                                                </div>
+                                                <div class="main-info-form-field main-info-field-socs youtube-field">
+                                                    <i class="fa fa-youtube-play"></i>
+                                                    <input type="text" class="form-control" name="link_youtube">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-block button-pure">Сохранить данные</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-cabinet-container">
                         <h1>Tab 4</h1>
@@ -401,6 +491,7 @@
     <script src="js/menu.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/spartan-multi-image-picker.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

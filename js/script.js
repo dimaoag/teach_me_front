@@ -342,3 +342,10 @@ $("#gallery").spartanMultiImagePicker({
     fieldName:  'galleryPhotos[]',
     maxCount : 10,
 });
+
+$("#photo_profile_company").spartanMultiImagePicker({
+    fieldName:  'photo_profile_company',
+    maxCount : 1,
+    rowHeight : '200px',
+    groupClassName : 'col-xs-6',
+});
