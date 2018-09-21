@@ -114,6 +114,7 @@
                     <label class="tab-company" title="Основная информация"><span class="tab-company-text">Основная информация</span><span class="tab-company-icon"><i class="fa fa-address-card" aria-hidden="true"></i></span></label>
                     <label class="tab-company" title="Услуги и платежи"><span class="tab-company-text">Услуги и платежи</span><span class="tab-company-icon"><i class="fa fa-credit-card" aria-hidden="true"></i></span></label>
                     <label class="tab-company" title="Настройки"><span class="tab-company-text">Настройки</span><span class="tab-company-icon"><i class="fa fa-cogs" aria-hidden="true"></i></span></label>
+                    <label class="tab-company" title="Тех поддержка"><span class="tab-company-text">Тех поддержка</span><span class="tab-company-icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span></label>
                 </div>
                 <div class="col-md-9">
                     <div class="tab-cabinet-container active">
@@ -334,7 +335,7 @@
                         <h1>Tab 2</h1>
                     </div>
                     <div class="tab-cabinet-container tab-main-info">
-                        <h2 class="tab-main-info-title">Добавьте основную информацию о себе</h2>
+                        <h2 class="tab-main-info-title">Добавьте основную информацию по организации</h2>
                         <div class="row">
                             <div class="col-md-10">
                                 <form action="#">
@@ -429,8 +430,94 @@
                     <div class="tab-cabinet-container">
                         <h1>Tab 4</h1>
                     </div>
+                    <div class="tab-cabinet-container tab-setting">
+                        <h2>Личная информация</h2>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <form class="form-horizontal form-item">
+                                    <div class="form-group">
+                                        <label for="first_name" class="col-sm-3 control-label">Имя</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="first_name" id="first_name" placeholder="Имя">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last_name" class="col-sm-3 control-label">Фамилия</label>
+                                        <div class="col-sm-9">
+                                            <input type="password" class="form-control" name="last_name" id="last_name" placeholder="Фамилия">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-6 col-sm-6">
+                                            <button type="submit" class="btn btn-block button-pure tab-setting-btn">Изменить данные</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form class="form-horizontal form-item">
+                                    <div class="form-group">
+                                        <label for="phone" class="col-sm-3 control-label">Телефон</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Телефон">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-6 col-sm-6">
+                                            <button type="submit" class="btn btn-block button-pure tab-setting-btn">Изменить телефон</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form class="form-horizontal form-item">
+                                    <div class="form-group">
+                                        <label for="email" class="col-sm-3 control-label">Email</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-6 col-sm-6">
+                                            <button type="submit" class="btn btn-block button-pure tab-setting-btn">Изменить email</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form class="form-horizontal form-item">
+                                    <div class="form-group">
+                                        <label for="old_password" class="col-sm-3 control-label">Старый пароль</label>
+                                        <div class="col-sm-9">
+                                            <input type="password" class="form-control" name="old_password" id="old_password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="new_password" class="col-sm-3 control-label">Новый пароль</label>
+                                        <div class="col-sm-9">
+                                            <input type="password" class="form-control" name="new_password" id="new_password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="confirm_password" class="col-sm-3 control-label">Подтвердить пароль</label>
+                                        <div class="col-sm-9">
+                                            <input type="password" class="form-control" name="confirm_password" id="confirm_password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-6 col-sm-6">
+                                            <button type="submit" class="btn btn-block button-pure tab-setting-btn">Изменить пароль</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                     <div class="tab-cabinet-container">
-                        <h1>Tab 5</h1>
+                        <div class="col-md-8 col-md-offset-2">
+                            <h2 class="feedback-title">Служба поддержки</h2>
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="message">Сообщение</label>
+                                    <textarea class="form-control" rows="7" name="message" id="message" placeholder="Введите текст"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-block button-pure">Отправить</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

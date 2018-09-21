@@ -119,6 +119,7 @@ input[type=text], textarea {outline:none;}
     border-color: #933ec5;
     color: white;
     outline: none;
+    font-size: 1rem;
 }
 .button-pure:hover, .button-pure:focus{
     background-color: white;
@@ -1511,6 +1512,20 @@ button.btn-search, button.btn-reset {
 }
 
 
+.tab-setting h2{
+    padding-bottom:  30px;
+    padding-top: 10px;
+}
+.tab-setting .control-label{
+    text-align: left;
+}
+.tab-setting-btn{
+    /*width: 50%;*/
+    font-size: 1rem;
+}
+.tab-setting .form-item{
+    padding-bottom: 50px;
+}
 @media all and (max-width: 991px){
     .my-courses-header{
         margin-top: 15px;
@@ -1538,6 +1553,9 @@ button.btn-search, button.btn-reset {
     }
     .tab-main-info-title{
         padding: 15px 0;
+    }
+    .tab-setting h2{
+        padding:  30px 0;
     }
 }
 @media all and (max-width: 660px){
