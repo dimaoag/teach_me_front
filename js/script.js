@@ -364,4 +364,10 @@ $("#photo_profile_company").spartanMultiImagePicker({
 //     asNavFor: '.orders-slider-titles'
 // });
 
-$('.carousel').carousel();
+$('.orders-slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+});

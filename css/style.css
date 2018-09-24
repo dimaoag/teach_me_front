@@ -195,6 +195,7 @@ header{
 
 .header-2{
     background-color: #f7f5f6;
+    z-index: 2;
 }
 .header-2-wrap{
     padding: 5px;
@@ -1511,7 +1512,7 @@ button.btn-search, button.btn-reset {
     color: #f44336;
 }
 
-
+/*----tabs-setting----*/
 .tab-setting h2{
     padding-bottom:  30px;
     padding-top: 10px;
@@ -1526,7 +1527,7 @@ button.btn-search, button.btn-reset {
 .tab-setting .form-item{
     padding-bottom: 50px;
 }
-
+/*----tabs-price----*/
 .tab-price h2{
     padding-bottom: 15px;
 }
@@ -1555,6 +1556,7 @@ button.btn-search, button.btn-reset {
     text-align-last:center;
     border: none;
 }
+/*----tabs-orders----*/
 .tab-orders .orders-header{
     display: flex;
     justify-content: space-between;
@@ -1601,12 +1603,27 @@ button.btn-search, button.btn-reset {
     justify-content: space-between;
 }
 .order-item-bottom a{
-    z-index: 5;
+    display: inline-block;
     color: red;
 }
 .order-item-bottom-price{
     color: black;
 }
+
+/*----orders-archive----*/
+.orders-archive{
+    padding-bottom: 20px;
+    min-height: 75vh;
+}
+.orders-archive h2{
+    margin: 15px 0;
+}
+.order-item-row{
+    padding: 4px 0;
+}
+
+/*----order-popup----*/
+
 
 @media all and (max-width: 991px){
     .my-courses-header{
@@ -1621,7 +1638,7 @@ button.btn-search, button.btn-reset {
         border-radius: 5px;
     }
     .tab-labels{
-        z-index: 10;
+        z-index: 5;
         position: sticky;
         top: -1px;
         background-color: white;
