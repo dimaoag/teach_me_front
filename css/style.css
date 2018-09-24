@@ -1623,7 +1623,53 @@ button.btn-search, button.btn-reset {
 }
 
 /*----order-popup----*/
+.order_popup{
+    max-width: 1250px;
+}
+.order_popup select{
+    width: 100%;
+    margin: 20px 0;
+}
+.order-info-wrap{
+    padding: 15px 0;
+    min-height: 370px;
+}
+.popup-order-info{
+    padding: 10px 0;
+}
+.popup-order-name{
+    color: #999999;
+}
+.popup-order-comments{
+    padding: 10px;
 
+}
+.comment-container{
+    height: 320px;
+    overflow-y: scroll;
+    margin: 10px 0;
+}
+
+.comment p{
+    background-color: #e2e2e2;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 5px;
+}
+.popup-order-form{
+    width: 100%;
+}
+.popup-order-form textarea{
+    margin: 5px 0;
+}
+.popup-comment-btn{
+    background-color: #4f4f4f;
+    font-size: 1rem;
+    color: white;
+}
+.popup-comment-btn:hover{
+    background-color: white;
+}
 
 @media all and (max-width: 991px){
     .my-courses-header{
@@ -1658,6 +1704,11 @@ button.btn-search, button.btn-reset {
     }
     .tab-price h2{
         padding: 25px 0;
+    }
+}
+@media all and (max-width: 767px){
+    .order-info-wrap{
+        min-height: 200px;
     }
 }
 @media all and (max-width: 660px){
