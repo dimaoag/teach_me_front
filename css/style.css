@@ -1539,10 +1539,14 @@ button.btn-search, button.btn-reset {
     padding: 15px;
     margin: 15px 0;
     display: flex;
-    border: 1px solid #933ec5;
+    border: 1px solid rgba(147, 62, 197, 0.5);
     border-radius: 5px;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.top-price{
+    border-width: 2px;
+    border-color: #933ec5;
 }
 .tab-price .price-select{
     background-color: white;
@@ -1551,6 +1555,59 @@ button.btn-search, button.btn-reset {
     text-align-last:center;
     border: none;
 }
+.tab-orders .orders-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.orders-select{
+    width: 200px;
+    background-color: white;
+    border: 1px solid #933ec5;
+    border-radius: 5px;
+    outline: none;
+}
+.tab-orders .archive{
+    color: #999999;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+.orders-container .col-md-4{
+    padding-left: 0;
+}
+.orders-container h3{
+    text-align: center;
+    padding: 10px 0;
+}
+.order-item{
+    padding: 10px;
+    border: 1px solid #933ec5;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.order-item a{
+    color: black;
+}
+.order-item > a > div{
+    padding-bottom: 5px;
+}
+.order-item-header{
+    display: flex;
+    justify-content: space-between;
+    color: #999999;
+}
+.order-item-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.order-item-bottom a{
+    z-index: 5;
+    color: red;
+}
+.order-item-bottom-price{
+    color: black;
+}
+
 @media all and (max-width: 991px){
     .my-courses-header{
         margin-top: 15px;
@@ -1626,6 +1683,10 @@ button.btn-search, button.btn-reset {
     }
     label.file-upload{
         height: 100px;
+    }
+    .tab-orders .archive{
+        white-space: normal;
+        text-align: center;
     }
 }
 

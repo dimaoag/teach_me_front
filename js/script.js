@@ -349,3 +349,19 @@ $("#photo_profile_company").spartanMultiImagePicker({
     rowHeight : '200px',
     groupClassName : 'col-xs-6',
 });
+
+// $('.orders-slider-titles').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     arrows: false,
+//     fade: true,
+//     asNavFor: '.orders-slider-container'
+// });
+// $('.orders-slider-container').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     // fade: true,
+//     asNavFor: '.orders-slider-titles'
+// });
+
+$('.carousel').carousel();
