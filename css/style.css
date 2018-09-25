@@ -1609,7 +1609,27 @@ button.btn-search, button.btn-reset {
 .order-item-bottom-price{
     color: black;
 }
+.orders-slide{
+    display: none;
+}
+.owl-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 
+}
+.owl-nav button{
+    width: 5%;
+    font-size: 1.5rem;
+    color: red;
+}
+.owl-nav button span{
+    color: #933ec5;
+    font-size: 1.7rem;
+}
 /*----orders-archive----*/
 .orders-archive{
     padding-bottom: 20px;
@@ -1704,6 +1724,12 @@ button.btn-search, button.btn-reset {
     }
     .tab-price h2{
         padding: 25px 0;
+    }
+    .orders-static{
+        display: none;
+    }
+    .orders-slide{
+        display: block;
     }
 }
 @media all and (max-width: 767px){
