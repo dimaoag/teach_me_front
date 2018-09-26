@@ -145,15 +145,6 @@ $('.favorite-toggle').on('click', function () {
     return false;
 });
 
-// function favoriteToggle(x) {
-//     if (x.classList['value'] === "fa fa-heart-o"){
-//         x.classList['value'] = 'fa';
-//         x.classList.toggle("fa-heart");
-//     } else {
-//         x.classList.toggle("fa-heart");
-//         x.classList['value'] = 'fa fa-heart-o';
-//     }
-// }
 
 //feedback-form
 $( ".feedback-form" ).submit(function( event ) {
@@ -332,23 +323,29 @@ $(document).ready(function(){
 
 });
 
+if ($('div').is('#photo_course')) {
+    $("#photo_course").spartanMultiImagePicker({
+        fieldName:  'photo_course',
+        maxCount : 1,
+    });
+}
 
-$("#photo_course").spartanMultiImagePicker({
-    fieldName:  'photo_course',
-    maxCount : 1,
-});
+if ($('div').is('#gallery')) {
+    $("#gallery").spartanMultiImagePicker({
+        fieldName:  'galleryPhotos[]',
+        maxCount : 10,
+    });
+}
 
-$("#gallery").spartanMultiImagePicker({
-    fieldName:  'galleryPhotos[]',
-    maxCount : 10,
-});
+if ($('div').is('#photo_profile_company')) {
+    $("#photo_profile_company").spartanMultiImagePicker({
+        fieldName:  'photo_profile_company',
+        maxCount : 1,
+        rowHeight : '200px',
+        groupClassName : 'col-xs-6',
+    });
+}
 
-$("#photo_profile_company").spartanMultiImagePicker({
-    fieldName:  'photo_profile_company',
-    maxCount : 1,
-    rowHeight : '200px',
-    groupClassName : 'col-xs-6',
-});
 
 // $('.orders-slider-titles').slick({
 //     slidesToShow: 1,
@@ -377,10 +374,13 @@ $('.open-order-popup').magnificPopup({
     midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 });
 
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-        items: 1,
-        center: true,
-        nav: true,
+if ($('div').is('.owl-carousel')) {
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            center: true,
+            nav: true,
+        });
     });
-});
+}
+
