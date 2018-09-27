@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/star-rating.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+
+    <title>Main page</title>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <nav class="navbar navbar-default navbar-main-page">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo" href="#">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#about">Курсы</a></li>
+                        <li><a href="#contact">Добавить курс</a></li>
+                        <li class="header-favorite-courses"><a href="#">Избраные</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><i class="fa fa-sign-in"></i>Вход</a></li>
+                        <li><a href="#"><i class="fa fa-user-plus"></i>Регистрация</a></li>
+                        <!--<li class="dropdown">-->
+                           <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>Дмитрий Ориховский<span class="caret"></span></a>-->
+                            <!--<ul class="dropdown-menu">-->
+                                <!--<li><a href="#">Log out</a></li>-->
+                                <!--<li><a href="#">Cabinet</a></li>-->
+                                <!--<li><a href="#">Something else here</a></li>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="main-header-wrap">
+                            <h1 class="main-header-title">платформа для поиска курсов</h1>
+                            <h3 class="main-header-description">Более 1000 курсов в 100 направлениях, которые можете отфильтровать по цене, типу или по месту расположения</h3>
+                            <div class="row main-header-form-wrap">
+                                <form action="#">
+                                    <div class="col-sm-5 col-sm-offset-1">
+                                        <form action="#">
+                                            <div class="buttonInside">
+                                                <input type="text" name="s" placeholder="Введите курс, который Вы ищите" class="main-header-form-field">
+                                                <button id="showPassword"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select name='category' class="main-header-form-field">
+                                            <option value='1'>Винница</option>
+                                            <option value='2'>Киев</option>
+                                            <option value='3'>Одесса</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <button class="main-header-form-field main-form-submit">Найти</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="categories-title">
+                            <div class="categories-numbers">
+                                02
+                            </div>
+                            <h1 class="categories-title-text">Подбери для себя курс</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row category-container">
+                    <div class="col-sm-4 category-item">
+                        <a class="c-preview" href="#">
+                            <div class="c-preview__img"></div>
+                            <div class="c-preview__title">
+                                <h3 class="c-preview__title">Gradient Hover Effect</h3>
+                                <p class="c-preview__title">132 курса</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 category-item">
+                        <a class="c-preview" href="#">
+                            <div class="c-preview__img"></div>
+                            <div class="c-preview__title">
+                                <h3 class="c-preview__title">Gradient Hover Effect</h3>
+                                <p class="c-preview__title">132 курса</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 category-item">
+                        <a class="c-preview" href="#">
+                            <div class="c-preview__img"></div>
+                            <div class="c-preview__title">
+                                <h3 class="c-preview__title">Gradient Hover Effect</h3>
+                                <p class="c-preview__title">132 курса</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 category-item">
+                        <a class="c-preview" href="#">
+                            <div class="c-preview__img"></div>
+                            <div class="c-preview__title">
+                                <h3 class="c-preview__title">Gradient Hover Effect</h3>
+                                <p class="c-preview__title">132 курса</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 category-item">
+                        <a class="c-preview" href="#">
+                            <div class="c-preview__img"></div>
+                            <div class="c-preview__title">
+                                <h3 class="c-preview__title">Gradient Hover Effect</h3>
+                                <p class="c-preview__title">132 курса</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 category-item">
+                        <a class="c-preview" href="#">
+                            <div class="c-preview__img"></div>
+                            <div class="c-preview__title">
+                                <h3 class="c-preview__title">Gradient Hover Effect</h3>
+                                <p class="c-preview__title">132 курса</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="main-advantages">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="main-advantages-wrap">
+                            <h1 class="main-header-title main-advantages-title">преимущества платформы</h1>
+                            <div class="main-advantages-blocks">
+                                <div class="main-advantages-blocks-item">
+                                    <div class="advantages-icon-wrap">
+                                        <div class="advantages-icon">
+                                            <img src="img/advn_icon_1.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="advantages-text">
+                                        <p>Сравнивайте и выбирайте лучшее</p>
+                                    </div>
+                                </div>
+                                <div class="main-advantages-blocks-item">
+                                    <div class="advantages-icon-wrap">
+                                        <div class="advantages-icon">
+                                            <img src="img/advn_icon_2.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="advantages-text">
+                                        <p> Сотни курсов в одном месте</p>
+                                    </div>
+                                </div>
+                                <div class="main-advantages-blocks-item">
+                                    <div class="advantages-icon-wrap">
+                                        <div class="advantages-icon">
+                                            <img src="img/advn_icon_3.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="advantages-text">
+                                        <p>Читайте и делитись отзывами о курсе</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 question-wrap">
+                        <h1 class="question-title">Хотите выставить свои курсы на Teach Me ?</h1>
+                        <div class="question-btn-wrap">
+                            <a href="#" class="button question-btn">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="co-md-12">
+                    <div class="footer">
+                        <div class="footer-logo">
+                            <div class="footer-logo-img">
+                                <img src="img/footer_logo.png" alt="">
+                            </div>
+                            <div class="footer-logo-text">
+                                &copy; 2018 Teach Me
+                            </div>
+                        </div>
+                        <div class="footer-nav">
+                            <ul>
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">Курсы</a></li>
+                                <li><a href="#">О платформе</a></li>
+                                <li><a href="#">сотрудничество</a></li>
+                                <li><a href="#">Блог</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <div class="footer-links-email">
+                                teachme@gmail.com
+                            </div>
+                            <div class="footer-links-socs">
+                                <a href="#">
+                                    <img src="img/facebook_icon.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/instagram_icon.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/telegram_icon.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/velocity.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

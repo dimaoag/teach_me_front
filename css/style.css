@@ -1774,3 +1774,300 @@ label.tab.active{
         padding-bottom: 25px;
     }
 }
+
+/*------main-page------*/
+.navbar-main-page .navbar-nav>li>a{
+    color: black;
+}
+.navbar-main-page .navbar-nav>li>a:hover{
+    color: #555555;
+}
+
+.main-header{
+    background: url("../img/header_main_bg.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+}
+.main-header-wrap{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-header-form-wrap{
+    width: 100%;
+}
+.main-header-form-field{
+    width: 100%;
+    color: #000000;
+    background-color: white;
+    padding: 10px 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    outline:none;
+}
+.buttonInside{
+    position:relative;
+}
+.buttonInside input{
+    height:100%;
+    width:100%;
+    color: black;
+    padding-left:10px;
+    border:none;outline:none;
+}
+.buttonInside button{
+    position:absolute;
+    right: 5px;
+    top: 50%;
+    border:none;
+    height:35px;
+    width:35px;
+    transform: translate(-5px,-50%);
+    color: black;
+    outline:none;
+    text-align:center;
+    background-color: white;
+}
+.buttonInside button:hover{
+    cursor:pointer;
+}
+.main-form-submit{
+    text-transform: uppercase;
+    font-family: Intro, sans-serif;
+    color: white;
+    background-image: linear-gradient(-21deg, rgba(255, 135, 6, 0.93) 0%, rgba(255, 192, 0, 0.93) 100%);
+}
+.main-header-title{
+    color: #ffffff;
+    font-family: Intro, sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 43.3px;
+    text-transform: uppercase;
+    letter-spacing: 8.43px;
+    text-align: center;
+}
+.main-header-description{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3.12px;
+    line-height: 52.01px;
+    padding: 8% 0;
+}
+
+.categories-title{
+    font-family: Intro, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 50px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+.categories-numbers{
+    opacity: 0.27;
+    color: #cecece;
+    font-size: 100px;
+    letter-spacing: -1.88px;
+}
+.categories-title-text{
+    color: #212121;
+    font-size: 45px;
+    letter-spacing: 1.35px;
+    z-index: 2;
+    margin-left: -15px;
+}
+
+
+.category-container{
+    padding-bottom: 75px;
+}
+.category-item{
+    box-sizing: border-box;
+    position: relative;
+    /*max-width: 380px;*/
+    margin: 15px auto;
+}
+
+.c-preview {
+    background: #000;
+    background: linear-gradient(135deg, #000000 0%, #000000 25%, #1e539e 50%, rgba(185, 62, 248, 0.72) 75%, rgba(185, 62, 248, 0.72) 100%);
+    /*background-image: linear-gradient(-20deg, rgba(113, 34, 195, 0.72) 0%, rgba(113, 34, 195, 0.72) 1%, rgba(185, 62, 248, 0.72) 100%);*/
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 320px;
+    max-width: 100vw;
+    max-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: .5s all;
+}
+.c-preview__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000 url(https://images.unsplash.com/photo-1466657718950-8f9346c04f8f?dpr=1&auto=format&fit=crop&w=800&h=800&q=80&cs=tinysrgb) no-repeat center center;
+    /*background: #000 url(../img/cat.png) no-repeat center center;*/
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: .6;
+    mix-blend-mode: screen;
+}
+.c-preview__title {
+    position: relative;
+    z-index: 10;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: white;
+    text-align: center;
+}
+.c-preview:hover {
+    background-position: 100% 100%;
+}
+
+.main-advantages{
+    background: url("../img/rawpixel-593597-unsplash.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 600px;
+    color: white;
+    position: relative;
+}
+.main-advantages:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+.main-advantages-wrap{
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-advantages-title{
+    margin-top: 10%;
+}
+.main-advantages-blocks{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.main-advantages-blocks-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+}
+.advantages-icon-wrap{
+    background-color: white;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+}
+.advantages-icon{
+    width: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.advantages-icon img{
+    width: 100%;
+}
+.advantages-text{
+    flex-grow: 1;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.question{
+    padding: 100px 0;
+}
+.question-title{
+    padding: 0 0 50px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.question-btn-wrap{
+    display: flex;
+    justify-content: center;
+}
+.question-btn{
+    padding: 10px 30px;
+}
+@media all and (max-width: 991px){
+    .main-advantages-blocks{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-advantages-blocks-item{
+        margin: 25px;
+    }
+}
+@media all and (max-width: 875px){
+    .categories-numbers{
+        font-size: 75px;
+    }
+    .categories-title-text{
+        font-size: 36px;
+    }
+}
+@media all and (max-width: 630px){
+    .main-header-title{
+        font-size: 2rem;
+    }
+    .main-header-description{
+        font-size: 1.5rem;
+        line-height: 32.01px;
+    }
+    .categories-numbers{
+        font-size: 50px;
+    }
+    .categories-title-text{
+        font-size: 25px;
+        margin-left: -10px;
+    }
+    .main-advantages-title{
+        padding: 15px;
+        font-size: 2.3rem;
+    }
+}
+@media all and (max-width: 445px){
+    .categories-numbers{
+        font-size: 35px;
+    }
+    .categories-title-text{
+        font-size: 17px;
+    }
+    .main-advantages-title{
+        font-size: 1.5rem;
+    }
+}
