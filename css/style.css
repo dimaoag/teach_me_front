@@ -135,56 +135,57 @@ input[type=text], textarea {outline:none;}
 .navbar-right i{
     margin-right: 7px;
 }
-.navbar-default {
+.navbar-dark {
     background-color: #0a0a0a;
     border-color: #0a0a0a;
     /*min-height: 75px;*/
 }
-.navbar-default .navbar-brand,
-.navbar-default .navbar-text,
-.navbar-default .navbar-nav > li > a,
-.navbar-default .navbar-link {
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-text,
+.navbar-dark .navbar-nav > li > a,
+.navbar-dark .navbar-link {
     color: #FFFFFF;
 }
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-link:hover,
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus,
-.navbar-default .navbar-toggle,
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-brand:focus,
+.navbar-dark .navbar-nav > li > a:hover,
+.navbar-dark .navbar-nav > li > a:focus,
+.navbar-dark .navbar-link:hover,
+.navbar-dark .navbar-nav > .active > a,
+.navbar-dark .navbar-nav > .active > a:hover,
+.navbar-dark .navbar-nav > .active > a:focus,
+.navbar-dark .navbar-nav > .open > a,
+.navbar-dark .navbar-nav > .open > a:hover,
+.navbar-dark .navbar-nav > .open > a:focus,
+.navbar-dark .navbar-toggle,
+.navbar-dark .navbar-toggle:hover,
+.navbar-dark .navbar-toggle:focus {
     color: #999999;
     background-color: #0a0a0a;
+    border-color: white;
 }
-.navbar-default .navbar-toggle .icon-bar {
-    color: #FFFFFF;
+.navbar-dark .navbar-toggle .icon-bar {
+    background-color: white;
 }
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
+.navbar-dark .navbar-collapse,
+.navbar-dark .navbar-form {
     border-color: #FFFFFF;
 }
 
-.navbar-default .navbar-nav .open .dropdown-menu {
+.navbar-dark .navbar-nav .open .dropdown-menu {
     background-color: #0a0a0a;
     border-color: #0a0a0a;
     color: #FFFFFF;
 }
-.navbar-default .navbar-nav .open .dropdown-menu > li,
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+.navbar-dark .navbar-nav .open .dropdown-menu > li,
+.navbar-dark .navbar-nav .open .dropdown-menu > li > a {
     color: #FFFFFF;
 }
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+.navbar-dark .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-dark .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar-dark .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-dark .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-dark .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #999999;
     background-color: #0a0a0a;
 }
@@ -197,15 +198,16 @@ input[type=text], textarea {outline:none;}
 .nav>li>a {
     padding: 5px 10px;
 }
-.navbar-default .navbar-toggle{
-    /*margin-top: 20px;*/
+.navbar-dark .navbar-toggle{
+    margin-top: 20px;
+    color: white;
 }
 .navbar {
     margin: 0;
 }
 .header-search{
     background-color: #f8f6f6;
-    padding: 15px 0;
+    padding: 10px 0;
 
 }
 .header-search-field{
@@ -218,9 +220,13 @@ input[type=text], textarea {outline:none;}
     margin: 10px 0;
 }
 .header-search-category{
-    /*color: white;*/
-    /*background-color: #fe8c14;*/
+    color: white;
+    background-color: #fe8c14;
     background-image: linear-gradient(-195deg, #ffc24a 0%, #fe840c 100%);
+}
+.header-search-category:hover {
+    color: #444645;
+    background: #ddd;
 }
 .header-search-text{
     box-sizing: border-box;
@@ -1759,6 +1765,12 @@ label.tab.active{
     padding: 15px 0;
 }
 
+/*------cabinet-user------*/
 .cabinet-user h1{
     padding-bottom: 20px;
+}
+@media all and (max-width: 767px){
+    .cabinet-user{
+        padding-bottom: 25px;
+    }
 }
