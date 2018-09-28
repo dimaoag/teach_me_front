@@ -9,255 +9,222 @@
     <link rel="stylesheet" href="css/ui.css">
     <link rel="stylesheet" href="css/star-rating.min.css">
     <link rel="stylesheet" href="css/menu.css">
-    <script src="js/modernizr.js"></script> <!-- Modernizr -->
-
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/hover.css">
     <!--===============================================================================================-->
-
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--===============================================================================================-->
-
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr.js"></script>
     <title>Registration</title>
 </head>
 <body>
-<div class="wrapper">
-    <header>
-        <div class="header-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 header-1-wrap">
-                        <div class="language">
-                            <div class="flag">
-                                <img src="img/flag_rus.png" alt="flag">
-                            </div>
-                            <div class="letters">
-                                <select name='language' >
-                                    <option value='Option 1'>RU</option>
-                                </select>
-                            </div>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar navbar-dark">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand logo" href="#">
+                            <img src="img/footer_logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#about">Курсы</a></li>
+                            <li><a href="#contact">Добавить курс</a></li>
+                            <li class="header-favorite-courses"><a href="#">Избраные</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><i class="fa fa-sign-in"></i>Вход</a></li>
+                            <li><a href="#"><i class="fa fa-user-plus"></i>Регистрация</a></li>
+                            <!--<li class="dropdown">-->
+                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>Дмитрий Ориховский<span class="caret"></span></a>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="#">Log out</a></li>-->
+                            <!--<li><a href="#">Cabinet</a></li>-->
+                            <!--<li><a href="#">Something else here</a></li>-->
+                            <!--</ul>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="header-search">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <select name='category' class="header-search-field header-search-category" >
+                                <option class="header-search-category-option" value=''>Все курсы</option>
+                                <option class="header-search-category-option" value='1'>Категория 1</option>
+                                <option class="header-search-category-option" value='2'>Категория 2</option>
+                                <option class="header-search-category-option" value='3'>Категория 3</option>
+                            </select>
                         </div>
-                        <div class="auth">
-                            <div class="login">
+                        <div class="col-sm-5">
+                            <form action="#" class="header-search-field header-search-text">
+                                <input type="text" placeholder="Введите курс, который Вы ищите">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="col-sm-2">
+                            <select name='category' class="header-search-field" >
+                                <option value='1'>Винница</option>
+                                <option value='2'>Киев</option>
+                                <option value='3'>Одесса</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2 header-search-favorite-courses">
+                            <div class="header-search-favorite">
                                 <a href="#">
-                                    <img src="img/user_icon.png" alt="">
-                                    <p>Войти</p>
-                                </a>
-                            </div>
-                            <div class="signup">
-                                <a href="#">
-                                    <img src="img/key_icon.png" alt="">
-                                    <p>Регистрация</p>
+                                    <i class="fa fa-heart"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <main>
+                <div class="container-login100 bg-login">
+                    <div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+                        <div class="dws-form">
+                        <span class="login100-form-title p-b-15 login-title signup-title">
+                               Зарегистрироваться как
+                            </span>
+                            <div class="label-wrap p-b-15">
+                                <label class="tab active" title="tab-1">Пользователь</label>
+                                <label class="tab" title="tab-2">Компания</label>
+                            </div>
+
+                            <!--User form start-->
+                            <form class="login100-form tab-form active" role="form">
+                                <div class="form-group">
+                                    <label for="first_name">Имя *</label>
+                                    <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Введите имя" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last_name">Фамилия</label>
+                                    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Введите фамилию">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Телефон *</label>
+                                    <input type="text" data-mask="callback-catalog-phone" class="form-control" id="phone" name="phone" placeholder="Введите телефон" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Пароль *</label>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Пароль" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password_confirm">Повторить пароль *</label>
+                                    <input type="password" class="form-control" id="password_confirm" name="password_confirm" placeholder="Повторить пароль" required>
+                                </div>
+                                <button class="btn btn-block login100-form-btn btn-login">Зарегистрироваться</button>
+                            </form>
+                            <!--User form end-->
+
+                            <!--Agent form start-->
+                            <form class="login100-form tab-form" role="form">
+                                <div class="form-group">
+                                    <label for="first_name">Имя *</label>
+                                    <input type="text" class="form-control" id="first_name1" name="first_name" placeholder="Имя" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone2">Телефон *</label>
+                                    <input type="text" data-mask="callback-catalog-phone" name="phone" class="form-control" id="phone2" placeholder="Введите телефон" required>
+                                </div>
+                                <!--<div class="form-group">-->
+                                <!--<label for="email1">Email *</label>-->
+                                <!--<input type="email" name="email" class="form-control" id="email1" placeholder="Email" required>-->
+                                <!--</div>-->
+                                <div class="form-group">
+                                    <label for="password1">Пароль *</label>
+                                    <input type="password" class="form-control" name="password" id="password1" placeholder="Пароль" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password_confirm1">Повторить пароль *</label>
+                                    <input type="password" class="form-control" id="password_confirm1" name="password_confirm" placeholder="Повторить пароль" required>
+                                </div>
+                                <button class="btn btn-block login100-form-btn btn-login">Зарегистрироваться</button>
+                            </form>
+                            <!--Agent form end-->
+                        </div>
+                        <div class="m-t-40">
+                            <span class="star-require">* - обязательные поля для заполнения</span>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
-        <div class="header-2">
+        <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="row header-2-wrap">
-                            <div class="col-lg-2 logo-sec-wrap">
-                                <a href="#">
-                                    <div class="logo">
-                                        <img src="img/logo.png" alt="">
-                                    </div>
-                                </a>
-                                <div class="col-lg-1 burget-wrap">
-                                    <a href="#0" class="cd-nav-trigger menuToggle toggle-header">Menu
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
+                    <div class="co-md-12">
+                        <div class="footer">
+                            <div class="footer-logo">
+                                <div class="footer-logo-img">
+                                    <img src="img/footer_logo.png" alt="">
+                                </div>
+                                <div class="footer-logo-text">
+                                    &copy; 2018 Teach Me
+                                </div>
+                            </div>
+                            <div class="footer-nav">
+                                <ul>
+                                    <li><a href="#">Главная</a></li>
+                                    <li><a href="#">Курсы</a></li>
+                                    <li><a href="#">О платформе</a></li>
+                                    <li><a href="#">сотрудничество</a></li>
+                                    <li><a href="#">Блог</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links">
+                                <div class="footer-links-email">
+                                    teachme@gmail.com
+                                </div>
+                                <div class="footer-links-socs">
+                                    <a href="#">
+                                        <img src="img/facebook_icon.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/instagram_icon.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/telegram_icon.png" alt="">
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-9">
-                                <div class="search">
-                                    <form action="#" class="row">
-                                        <div class="col-lg-3">
-                                            <select name='category' class="search-field search-category" >
-                                                <option value=''>Все курсы</option>
-                                                <option value='1'>Категория 1</option>
-                                                <option value='2'>Категория 2</option>
-                                                <option value='3'>Категория 3</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-5">
-                                            <input type="text" class="search-field search-text" placeholder="Введите курс, который Вы ищите">
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <select name='category' class="search-field search-city" >
-                                                <option value='1'>Винница</option>
-                                                <option value='2'>Киев</option>
-                                                <option value='3'>Одесса</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <button type="submit" class="button search-button">Найти</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <nav>
-        <a href="#0" class="cd-nav-trigger menuToggle toggle-main" id="menuToggle">Menu
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>
-        <ul class="cd-primary-nav">
-            <li><a href="#0">The team</a></li>
-            <li><a href="#0">Our services</a></li>
-            <li><a href="#0">Our projects</a></li>
-            <li><a href="#0">Start a project</a></li>
-            <li><a href="#0">Join In</a></li>
-            <li><a href="#0">Create an account</a></li>
-        </ul>
-        <div class="cd-overlay-nav">
-            <span></span>
-        </div> <!-- cd-overlay-nav -->
-
-        <div class="cd-overlay-content">
-            <span></span>
-        </div> <!-- cd-overlay-content -->
-    </nav>
-    <div class="breadcrumbs">
-
+        </footer>
     </div>
-    <main>
-        <div class="container-login100" style="background-image: url('img/bg-01.jpg');">
-            <div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
-                <div class="dws-form">
-                    <span class="login100-form-title p-b-15 login-title signup-title">
-                           Зарегистрироваться как
-                        </span>
-                    <div class="label-wrap p-b-15">
-                        <label class="tab active" title="tab-1">Пользователь</label>
-                        <label class="tab" title="tab-2">Компания</label>
-                    </div>
-
-                    <!--User form start-->
-                    <form class="login100-form tab-form active" role="form">
-                        <div class="form-group">
-                            <label for="first_name">Имя *</label>
-                            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Введите имя" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="last_name">Фамилия</label>
-                            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Введите фамилию">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Телефон *</label>
-                            <input type="text" data-mask="callback-catalog-phone" class="form-control" id="phone" name="phone" placeholder="Введите телефон" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Пароль *</label>
-                            <input type="password" class="form-control" id="password" name="password" placeholder="Пароль" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password_confirm">Повторить пароль *</label>
-                            <input type="password" class="form-control" id="password_confirm" name="password_confirm" placeholder="Повторить пароль" required>
-                        </div>
-                        <button class="btn btn-block login100-form-btn btn-login">Зарегистрироваться</button>
-                    </form>
-                    <!--User form end-->
-
-                    <!--Agent form start-->
-                    <form class="login100-form tab-form" role="form">
-                        <div class="form-group">
-                            <label for="first_name">Имя *</label>
-                            <input type="text" class="form-control" id="first_name1" name="first_name" placeholder="Имя" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone2">Телефон *</label>
-                            <input type="text" data-mask="callback-catalog-phone" name="phone" class="form-control" id="phone2" placeholder="Введите телефон" required>
-                        </div>
-                        <!--<div class="form-group">-->
-                            <!--<label for="email1">Email *</label>-->
-                            <!--<input type="email" name="email" class="form-control" id="email1" placeholder="Email" required>-->
-                        <!--</div>-->
-                        <div class="form-group">
-                            <label for="password1">Пароль *</label>
-                            <input type="password" class="form-control" name="password" id="password1" placeholder="Пароль" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password_confirm1">Повторить пароль *</label>
-                            <input type="password" class="form-control" id="password_confirm1" name="password_confirm" placeholder="Повторить пароль" required>
-                        </div>
-                        <button class="btn btn-block login100-form-btn btn-login">Зарегистрироваться</button>
-                    </form>
-                    <!--Agent form end-->
-                </div>
-                <div class="m-t-40">
-                    <span class="star-require">* - обязательные поля для заполнения</span>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="co-md-12">
-                    <div class="footer">
-                        <div class="footer-logo">
-                            <div class="footer-logo-img">
-                                <img src="img/footer_logo.png" alt="">
-                            </div>
-                            <div class="footer-logo-text">
-                                &copy; 2018 Teach Me
-                            </div>
-                        </div>
-                        <div class="footer-nav">
-                            <ul>
-                                <li><a href="#">Главная</a></li>
-                                <li><a href="#">Курсы</a></li>
-                                <li><a href="#">О платформе</a></li>
-                                <li><a href="#">сотрудничество</a></li>
-                                <li><a href="#">Блог</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-links">
-                            <div class="footer-links-email">
-                                teachme@gmail.com
-                            </div>
-                            <div class="footer-links-socs">
-                                <a href="#">
-                                    <img src="img/facebook_icon.png" alt="">
-                                </a>
-                                <a href="#">
-                                    <img src="img/instagram_icon.png" alt="">
-                                </a>
-                                <a href="#">
-                                    <img src="img/telegram_icon.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-</div>
-
-
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/velocity.min.js"></script>
     <script src="js/menu.js"></script>
-
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/spartan-multi-image-picker.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

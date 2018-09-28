@@ -12,534 +12,589 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/modernizr.js"></script> <!-- Modernizr -->
-
-
+    <script src="js/modernizr.js"></script>
     <title>Company page</title>
 </head>
 <body>
-<div class="wrapper">
-    <header>
-        <div class="header-1">
+    <div class="wrapper">
+        <header>
+            <nav class="navbar navbar-dark">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand logo" href="#">
+                            <img src="img/footer_logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#about">Курсы</a></li>
+                            <li><a href="#contact">Добавить курс</a></li>
+                            <li class="header-favorite-courses"><a href="#">Избраные</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><i class="fa fa-sign-in"></i>Вход</a></li>
+                            <li><a href="#"><i class="fa fa-user-plus"></i>Регистрация</a></li>
+                            <!--<li class="dropdown">-->
+                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>Дмитрий Ориховский<span class="caret"></span></a>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="#">Log out</a></li>-->
+                            <!--<li><a href="#">Cabinet</a></li>-->
+                            <!--<li><a href="#">Something else here</a></li>-->
+                            <!--</ul>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="header-search">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <select name='category' class="header-search-field header-search-category" >
+                                <option class="header-search-category-option" value=''>Все курсы</option>
+                                <option class="header-search-category-option" value='1'>Категория 1</option>
+                                <option class="header-search-category-option" value='2'>Категория 2</option>
+                                <option class="header-search-category-option" value='3'>Категория 3</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-5">
+                            <form action="#" class="header-search-field header-search-text">
+                                <input type="text" placeholder="Введите курс, который Вы ищите">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="col-sm-2">
+                            <select name='category' class="header-search-field" >
+                                <option value='1'>Винница</option>
+                                <option value='2'>Киев</option>
+                                <option value='3'>Одесса</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2 header-search-favorite-courses">
+                            <div class="header-search-favorite">
+                                <a href="#">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="breadcrumbs"></section>
+            <main>
+                <div class="container company-page">
+                    <div class="row">
+                        <div class="company-info-md">
+                            <div class="col-lg-3">
+                                <div class="course-info">
+                                    <div class="courser-info-img">
+                                        <img src="img/bg-01.jpg" alt="">
+                                        <div class="course-info-socs">
+                                            <a href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-vk"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-youtube-play"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="course-info-location">
+                                        <div class="course-info-address">
+                                            <p><i class="fa fa-map-marker"></i> г. Винница, ул. Нансена 7А</p>
+                                        </div>
+                                        <div class="course-info-phone">
+                                            <p><i class="fa fa-phone"></i> +380979746559</p>
+                                        </div>
+                                        <div class="course-info-phone">
+                                            <p><i class="fa fa-phone"></i> +380979746559</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <h1 class="company-name">Обучающий центр Meri Meri</h1>
+                            <div class="company-courses">
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
+                                        </a>
+                                        <div class="favorite-img">
+                                            <a href="#" class="favorite-toggle">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
+                                            <div class="favorite">
+                                                <a href="#" class="favorite-toggle">
+                                                    <i class="fa fa-heart-o"></i>
+                                                </a>
+                                                <p>в избранное</p>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-middle">
+                                            <div class="search-course-date">
+                                                <span>оффлайн</span>
+                                            </div>
+                                            <div class="rating star-icon value-3 color-ok label-left slow">
+                                                <div class="label-value">3.1</div>
+                                                <div class="star-container">
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-footer">
+                                            <div class="search-course-footer-left">
+                                                <p class="master-class">Мастер-класс:</p>
+                                                <p class="sits">до 3 учеников</p>
+                                                <p class="search-course-footer-city">(Винница)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>2500 грн</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
+                                        </a>
+                                        <div class="favorite-img">
+                                            <a href="#" class="favorite-toggle">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
+                                            <div class="favorite">
+                                                <a href="#" class="favorite-toggle">
+                                                    <i class="fa fa-heart-o"></i>
+                                                </a>
+                                                <p>в избранное</p>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-middle">
+                                            <div class="search-course-date">
+                                                <span>оффлайн</span>
+                                            </div>
+                                            <div class="rating star-icon value-3 color-ok label-left slow">
+                                                <div class="label-value">3.1</div>
+                                                <div class="star-container">
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-footer">
+                                            <div class="search-course-footer-left">
+                                                <p class="master-class">Мастер-класс:</p>
+                                                <p class="sits">до 3 учеников</p>
+                                                <p class="search-course-footer-city">(Винница)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>2500 грн</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
+                                        </a>
+                                        <div class="favorite-img">
+                                            <a href="#" class="favorite-toggle">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
+                                            <div class="favorite">
+                                                <a href="#" class="favorite-toggle">
+                                                    <i class="fa fa-heart-o"></i>
+                                                </a>
+                                                <p>в избранное</p>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-middle">
+                                            <div class="search-course-date">
+                                                <span>оффлайн</span>
+                                            </div>
+                                            <div class="rating star-icon value-3 color-ok label-left slow">
+                                                <div class="label-value">3.1</div>
+                                                <div class="star-container">
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-footer">
+                                            <div class="search-course-footer-left">
+                                                <p class="master-class">Мастер-класс:</p>
+                                                <p class="sits">до 3 учеников</p>
+                                                <p class="search-course-footer-city">(Винница)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>2500 грн</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
+                                        </a>
+                                        <div class="favorite-img">
+                                            <a href="#" class="favorite-toggle">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
+                                            <div class="favorite">
+                                                <a href="#" class="favorite-toggle">
+                                                    <i class="fa fa-heart-o"></i>
+                                                </a>
+                                                <p>в избранное</p>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-middle">
+                                            <div class="search-course-date">
+                                                <span>оффлайн</span>
+                                            </div>
+                                            <div class="rating star-icon value-3 color-ok label-left slow">
+                                                <div class="label-value">3.1</div>
+                                                <div class="star-container">
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-footer">
+                                            <div class="search-course-footer-left">
+                                                <p class="master-class">Мастер-класс:</p>
+                                                <p class="sits">до 3 учеников</p>
+                                                <p class="search-course-footer-city">(Винница)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>2500 грн</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
+                                        </a>
+                                        <div class="favorite-img">
+                                            <a href="#" class="favorite-toggle">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
+                                            <div class="favorite">
+                                                <a href="#" class="favorite-toggle">
+                                                    <i class="fa fa-heart-o"></i>
+                                                </a>
+                                                <p>в избранное</p>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-middle">
+                                            <div class="search-course-date">
+                                                <span>оффлайн</span>
+                                            </div>
+                                            <div class="rating star-icon value-3 color-ok label-left slow">
+                                                <div class="label-value">3.1</div>
+                                                <div class="star-container">
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-footer">
+                                            <div class="search-course-footer-left">
+                                                <p class="master-class">Мастер-класс:</p>
+                                                <p class="sits">до 3 учеников</p>
+                                                <p class="search-course-footer-city">(Винница)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>2500 грн</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-info-fixed">
+                            <div class="col-lg-3">
+                                <div class="course-info">
+                                    <div class="courser-info-img">
+                                        <img src="img/search_course.png" alt="image">
+                                        <div class="course-info-socs">
+                                            <a href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-vk"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-youtube-play"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="course-info-location">
+                                        <div class="course-info-address">
+                                            <p><i class="fa fa-map-marker"></i> г. Винница, ул. Нансена 7А</p>
+                                        </div>
+                                        <div class="course-info-phone">
+                                            <p><i class="fa fa-phone"></i> +380979746559</p>
+                                        </div>
+                                        <div class="course-info-phone">
+                                            <p><i class="fa fa-phone"></i> +380979746559</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </main>
+        </div>
+        <!--<nav>-->
+            <!--<a href="#0" class="cd-nav-trigger menuToggle toggle-main" id="menuToggle">Menu-->
+                <!--<span></span>-->
+                <!--<span></span>-->
+                <!--<span></span>-->
+            <!--</a>-->
+            <!--<ul class="cd-primary-nav">-->
+                <!--<li><a href="#0">The team</a></li>-->
+                <!--<li><a href="#0">Our services</a></li>-->
+                <!--<li><a href="#0">Our projects</a></li>-->
+                <!--<li><a href="#0">Start a project</a></li>-->
+                <!--<li><a href="#0">Join In</a></li>-->
+                <!--<li><a href="#0">Create an account</a></li>-->
+            <!--</ul>-->
+            <!--<div class="cd-overlay-nav">-->
+                <!--<span></span>-->
+            <!--</div> &lt;!&ndash; cd-overlay-nav &ndash;&gt;-->
+
+            <!--<div class="cd-overlay-content">-->
+                <!--<span></span>-->
+            <!--</div> &lt;!&ndash; cd-overlay-content &ndash;&gt;-->
+        <!--</nav>-->
+        <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 header-1-wrap">
-                        <div class="language">
-                            <div class="flag">
-                                <img src="img/flag_rus.png" alt="flag">
-                            </div>
-                            <div class="letters">
-                                <select name='language' >
-                                    <option value='Option 1'>RU</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="auth">
-                            <div class="login">
-                                <a href="#">
-                                    <img src="img/user_icon.png" alt="">
-                                    <p>Войти</p>
-                                </a>
-                            </div>
-                            <div class="signup">
-                                <a href="#">
-                                    <img src="img/key_icon.png" alt="">
-                                    <p>Регистрация</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row header-2-wrap">
-                            <div class="col-lg-2 logo-sec-wrap">
-                                <a href="#">
-                                    <div class="logo">
-                                        <img src="img/logo.png" alt="">
-                                    </div>
-                                </a>
-                                <div class="col-lg-1 burget-wrap">
-                                    <a href="#0" class="cd-nav-trigger menuToggle toggle-header">Menu
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </a>
+                    <div class="co-md-12">
+                        <div class="footer">
+                            <div class="footer-logo">
+                                <div class="footer-logo-img">
+                                    <img src="img/footer_logo.png" alt="">
+                                </div>
+                                <div class="footer-logo-text">
+                                    &copy; 2018 Teach Me
                                 </div>
                             </div>
-                            <div class="col-lg-9">
-                                <div class="search">
-                                    <form action="#" class="row">
-                                        <div class="col-lg-3">
-                                            <select name='category' class="search-field search-category" >
-                                                <option value=''>Все курсы</option>
-                                                <option value='1'>Категория 1</option>
-                                                <option value='2'>Категория 2</option>
-                                                <option value='3'>Категория 3</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-5">
-                                            <input type="text" class="search-field search-text" placeholder="Введите курс, который Вы ищите">
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <select name='category' class="search-field search-city" >
-                                                <option value='1'>Винница</option>
-                                                <option value='2'>Киев</option>
-                                                <option value='3'>Одесса</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <button type="submit" class="button search-button">Найти</button>
-                                        </div>
-                                    </form>
+                            <div class="footer-nav">
+                                <ul>
+                                    <li><a href="#">Главная</a></li>
+                                    <li><a href="#">Курсы</a></li>
+                                    <li><a href="#">О платформе</a></li>
+                                    <li><a href="#">сотрудничество</a></li>
+                                    <li><a href="#">Блог</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links">
+                                <div class="footer-links-email">
+                                    teachme@gmail.com
                                 </div>
-                            </div>
-                            <div class="col-lg-1 burget-wrap hide-burger">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <nav>
-        <a href="#0" class="cd-nav-trigger menuToggle toggle-main" id="menuToggle">Menu
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>
-        <ul class="cd-primary-nav">
-            <li><a href="#0">The team</a></li>
-            <li><a href="#0">Our services</a></li>
-            <li><a href="#0">Our projects</a></li>
-            <li><a href="#0">Start a project</a></li>
-            <li><a href="#0">Join In</a></li>
-            <li><a href="#0">Create an account</a></li>
-        </ul>
-        <div class="cd-overlay-nav">
-            <span></span>
-        </div> <!-- cd-overlay-nav -->
-
-        <div class="cd-overlay-content">
-            <span></span>
-        </div> <!-- cd-overlay-content -->
-    </nav>
-    <section class="breadcrumbs">
-
-    </section>
-    <main>
-        <div class="container company-page">
-            <div class="row">
-                <div class="company-info-md">
-                    <div class="col-lg-3">
-                        <div class="course-info">
-                            <div class="courser-info-img">
-                                <img src="img/bg-01.jpg" alt="">
-                                <div class="course-info-socs">
+                                <div class="footer-links-socs">
                                     <a href="#">
-                                        <i class="fa fa-instagram"></i>
+                                        <img src="img/facebook_icon.png" alt="">
                                     </a>
                                     <a href="#">
-                                        <i class="fa fa-facebook"></i>
+                                        <img src="img/instagram_icon.png" alt="">
                                     </a>
                                     <a href="#">
-                                        <i class="fa fa-vk"></i>
+                                        <img src="img/telegram_icon.png" alt="">
                                     </a>
-                                    <a href="#">
-                                        <i class="fa fa-youtube-play"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="course-info-location">
-                                <div class="course-info-address">
-                                    <p><i class="fa fa-map-marker"></i> г. Винница, ул. Нансена 7А</p>
-                                </div>
-                                <div class="course-info-phone">
-                                    <p><i class="fa fa-phone"></i> +380979746559</p>
-                                </div>
-                                <div class="course-info-phone">
-                                    <p><i class="fa fa-phone"></i> +380979746559</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <h1 class="company-name">Обучающий центр Meri Meri</h1>
-                    <div class="company-courses">
-                        <div class="search-course">
-                            <div class="search-course-img">
-                                <a href="#">
-                                    <img src="img/search_course.png" alt="">
-                                </a>
-                                <div class="favorite-img">
-                                    <a href="#" class="favorite-toggle">
-                                        <i class="fa fa-heart-o"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="search-course-info">
-                                <div class="search-course-header">
-                                    <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
-                                    <div class="favorite">
-                                        <a href="#" class="favorite-toggle">
-                                            <i class="fa fa-heart-o"></i>
-                                        </a>
-                                        <p>в избранное</p>
-                                    </div>
-                                </div>
-                                <div class="search-course-middle">
-                                    <div class="search-course-date">
-                                        <span>оффлайн</span>
-                                    </div>
-                                    <div class="rating star-icon value-3 color-ok label-left slow">
-                                        <div class="label-value">3.1</div>
-                                        <div class="star-container">
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search-course-footer">
-                                    <div class="search-course-footer-left">
-                                        <p class="master-class">Мастер-класс:</p>
-                                        <p class="sits">до 3 учеников</p>
-                                        <p class="search-course-footer-city">(Винница)</p>
-                                    </div>
-                                    <div class="price">
-                                        <p>2500 грн</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="search-course">
-                            <div class="search-course-img">
-                                <a href="#">
-                                    <img src="img/search_course.png" alt="">
-                                </a>
-                                <div class="favorite-img">
-                                    <a href="#" class="favorite-toggle">
-                                        <i class="fa fa-heart-o"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="search-course-info">
-                                <div class="search-course-header">
-                                    <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
-                                    <div class="favorite">
-                                        <a href="#" class="favorite-toggle">
-                                            <i class="fa fa-heart-o"></i>
-                                        </a>
-                                        <p>в избранное</p>
-                                    </div>
-                                </div>
-                                <div class="search-course-middle">
-                                    <div class="search-course-date">
-                                        <span>оффлайн</span>
-                                    </div>
-                                    <div class="rating star-icon value-3 color-ok label-left slow">
-                                        <div class="label-value">3.1</div>
-                                        <div class="star-container">
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search-course-footer">
-                                    <div class="search-course-footer-left">
-                                        <p class="master-class">Мастер-класс:</p>
-                                        <p class="sits">до 3 учеников</p>
-                                        <p class="search-course-footer-city">(Винница)</p>
-                                    </div>
-                                    <div class="price">
-                                        <p>2500 грн</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="search-course">
-                            <div class="search-course-img">
-                                <a href="#">
-                                    <img src="img/search_course.png" alt="">
-                                </a>
-                                <div class="favorite-img">
-                                    <a href="#" class="favorite-toggle">
-                                        <i class="fa fa-heart-o"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="search-course-info">
-                                <div class="search-course-header">
-                                    <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
-                                    <div class="favorite">
-                                        <a href="#" class="favorite-toggle">
-                                            <i class="fa fa-heart-o"></i>
-                                        </a>
-                                        <p>в избранное</p>
-                                    </div>
-                                </div>
-                                <div class="search-course-middle">
-                                    <div class="search-course-date">
-                                        <span>оффлайн</span>
-                                    </div>
-                                    <div class="rating star-icon value-3 color-ok label-left slow">
-                                        <div class="label-value">3.1</div>
-                                        <div class="star-container">
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search-course-footer">
-                                    <div class="search-course-footer-left">
-                                        <p class="master-class">Мастер-класс:</p>
-                                        <p class="sits">до 3 учеников</p>
-                                        <p class="search-course-footer-city">(Винница)</p>
-                                    </div>
-                                    <div class="price">
-                                        <p>2500 грн</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="search-course">
-                            <div class="search-course-img">
-                                <a href="#">
-                                    <img src="img/search_course.png" alt="">
-                                </a>
-                                <div class="favorite-img">
-                                    <a href="#" class="favorite-toggle">
-                                        <i class="fa fa-heart-o"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="search-course-info">
-                                <div class="search-course-header">
-                                    <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
-                                    <div class="favorite">
-                                        <a href="#" class="favorite-toggle">
-                                            <i class="fa fa-heart-o"></i>
-                                        </a>
-                                        <p>в избранное</p>
-                                    </div>
-                                </div>
-                                <div class="search-course-middle">
-                                    <div class="search-course-date">
-                                        <span>оффлайн</span>
-                                    </div>
-                                    <div class="rating star-icon value-3 color-ok label-left slow">
-                                        <div class="label-value">3.1</div>
-                                        <div class="star-container">
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="star-empty"></i>
-                                                <i class="star-half"></i>
-                                                <i class="star-filled"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search-course-footer">
-                                    <div class="search-course-footer-left">
-                                        <p class="master-class">Мастер-класс:</p>
-                                        <p class="sits">до 3 учеников</p>
-                                        <p class="search-course-footer-city">(Винница)</p>
-                                    </div>
-                                    <div class="price">
-                                        <p>2500 грн</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-info-fixed">
-                    <div class="col-lg-3">
-                        <div class="course-info">
-                            <div class="courser-info-img">
-                                <img src="img/search_course.png" alt="image">
-                                <div class="course-info-socs">
-                                    <a href="#">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fa fa-vk"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fa fa-youtube-play"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="course-info-location">
-                                <div class="course-info-address">
-                                    <p><i class="fa fa-map-marker"></i> г. Винница, ул. Нансена 7А</p>
-                                </div>
-                                <div class="course-info-phone">
-                                    <p><i class="fa fa-phone"></i> +380979746559</p>
-                                </div>
-                                <div class="course-info-phone">
-                                    <p><i class="fa fa-phone"></i> +380979746559</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="co-md-12">
-                    <div class="footer">
-                        <div class="footer-logo">
-                            <div class="footer-logo-img">
-                                <img src="img/footer_logo.png" alt="">
-                            </div>
-                            <div class="footer-logo-text">
-                                &copy; 2018 Teach Me
-                            </div>
-                        </div>
-                        <div class="footer-nav">
-                            <ul>
-                                <li><a href="#">Главная</a></li>
-                                <li><a href="#">Курсы</a></li>
-                                <li><a href="#">О платформе</a></li>
-                                <li><a href="#">сотрудничество</a></li>
-                                <li><a href="#">Блог</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-links">
-                            <div class="footer-links-email">
-                                teachme@gmail.com
-                            </div>
-                            <div class="footer-links-socs">
-                                <a href="#">
-                                    <img src="img/facebook_icon.png" alt="">
-                                </a>
-                                <a href="#">
-                                    <img src="img/instagram_icon.png" alt="">
-                                </a>
-                                <a href="#">
-                                    <img src="img/telegram_icon.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-</div>
+        </footer>
+    </div>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/velocity.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/spartan-multi-image-picker.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

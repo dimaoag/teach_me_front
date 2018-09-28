@@ -189,11 +189,14 @@ input[type=text], textarea {outline:none;}
     color: #999999;
     background-color: #0a0a0a;
 }
+.logo{
+    padding: 10px 10px;
+}
 .logo img {
     height: 25px;
 }
 .nav{
-    margin: 20px 0 5px 0;
+    margin: 10px 0 5px 0;
 }
 .nav>li>a {
     padding: 5px 10px;
@@ -212,7 +215,7 @@ input[type=text], textarea {outline:none;}
 }
 .header-search-field{
     width: 100%;
-    padding: 7px 0;
+    padding: 7px 7px;
     border-radius: 4px;
     background-color: white;
     outline: none;
@@ -240,7 +243,11 @@ input[type=text], textarea {outline:none;}
     width: 8%;
     height: 100%;
     border: none;
+    outline: none;
     background-color: white;
+}
+.header-search-text button:hover{
+    color: #933ec5;
 }
 .header-search-favorite{
     background-color: #f8f6f6;
@@ -348,11 +355,11 @@ div.footer-nav a{
 
 /*breadcrumb*/
 .breadcrumbs{
-    margin: 20px 0;
-    margin-top: 110px;
+    /*margin: 20px 0;*/
+    /*margin-top: 110px;*/
 }
 ul.breadcrumb {
-    padding: 10px 10px;
+    padding: 25px 10px;
     list-style: none;
     background-color: white;
     margin-bottom: 0;
@@ -712,6 +719,9 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:focus, span.ui-slider-handl
 }
 
 /*login*/
+.bg-login{
+    background: url('../img/bg-01.jpg') no-repeat center center fixed;
+}
 .btn-login{
     color: white;
     font-weight: bold;
@@ -800,7 +810,7 @@ label.tab.active{
 /*---------course-info-fixed-------------*/
 .course-info-fixed{
     position: sticky;
-    top: 130px;
+    top: 30px;
     right: 0;
     font-size: 1rem;
 }
@@ -1022,6 +1032,9 @@ label.tab.active{
     line-height: 33.1px;
     padding-bottom: 30px;
     border-bottom: 1px solid black;
+}
+.accordion-item{
+    padding: 10px 0;
 }
 .accordion-title{
     display: flex;
@@ -1663,6 +1676,7 @@ label.tab.active{
 .add-course .panel{
     border: none;
     padding-top: 10px;
+    box-shadow: none;
 }
 .add-course .nav-tabs{
     padding: 30px 0;
@@ -1736,7 +1750,7 @@ label.tab.active{
 /*company-page*/
 .company-page{
     min-height: 75vh;
-    margin-top: 150px;
+    margin-top: 50px;
     padding-bottom: 25px;
 }
 .company-name{
@@ -1860,7 +1874,7 @@ label.tab.active{
     font-weight: bold;
     letter-spacing: 3.12px;
     line-height: 52.01px;
-    padding: 8% 0;
+    padding: 2% 0 8% 0;
 }
 
 .categories-title{
@@ -1900,7 +1914,8 @@ label.tab.active{
 
 .c-preview {
     background: #000;
-    background: linear-gradient(135deg, #000000 0%, #000000 25%, #1e539e 50%, rgba(185, 62, 248, 0.72) 75%, rgba(185, 62, 248, 0.72) 100%);
+    background: linear-gradient(135deg, #000000 0%, #000000 25%, rgba(113, 34, 195, 0.9) 50%, rgba(113, 34, 195, 0.9) 75%, rgba(185, 62, 248, 0.9) 100%);
+    /*background-image: linear-gradient(-20deg, rgba(113, 34, 195, 0.72) 0%, rgba(113, 34, 195, 0.72) 1%, rgba(185, 62, 248, 0.72) 100%);*/
     /*background-image: linear-gradient(-20deg, rgba(113, 34, 195, 0.72) 0%, rgba(113, 34, 195, 0.72) 1%, rgba(185, 62, 248, 0.72) 100%);*/
     background-size: 400% 400%;
     background-repeat: no-repeat;
@@ -1919,13 +1934,15 @@ label.tab.active{
     position: absolute;
     left: 0;
     top: 0;
-    background: #000 url(https://images.unsplash.com/photo-1466657718950-8f9346c04f8f?dpr=1&auto=format&fit=crop&w=800&h=800&q=80&cs=tinysrgb) no-repeat center center;
+    /*background: #000 url(https://images.unsplash.com/photo-1466657718950-8f9346c04f8f?dpr=1&auto=format&fit=crop&w=800&h=800&q=80&cs=tinysrgb) no-repeat center center;*/
     /*background: #000 url(../img/cat.png) no-repeat center center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center center;*/
     background-size: cover;
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: .6;
+    opacity: .9;
     mix-blend-mode: screen;
 }
 .c-preview__title {
@@ -1935,11 +1952,11 @@ label.tab.active{
     letter-spacing: .05em;
     color: white;
     text-align: center;
+    font-weight: bold;
 }
 .c-preview:hover {
     background-position: 100% 100%;
 }
-
 .main-advantages{
     background: url("../img/rawpixel-593597-unsplash.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
