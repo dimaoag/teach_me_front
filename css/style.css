@@ -1179,7 +1179,7 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:focus, span.ui-slider-handl
 }
 .label-value{
     color: #999999;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-top: 3px;
 }
 .search-course-footer{
@@ -1474,7 +1474,7 @@ label.tab.active{
 }
 .course-info-footer p{
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 .course-info-footer-btn{
     background-color: white;
@@ -1700,7 +1700,7 @@ label.tab.active{
 }
 .course-relate-price{
     font-size: 1.2rem;
-    text-align: center;
+    text-align: right;
     font-weight: bold;
     padding: 5px 0;
 }
@@ -1737,10 +1737,10 @@ label.tab.active{
     padding: 10px 50px;
 }
 .create-review:hover, .create-review:focus{
-    background-image: none;
-    background-color: white;
-    color: #933ec5;
-    border-color: #933ec5;
+    /*background-image: none;*/
+    /*background-color: white;*/
+    color: white;
+    /*border-color: #933ec5;*/
 }
 .create-review-form{
     max-width: 700px;
