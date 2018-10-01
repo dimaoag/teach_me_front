@@ -445,7 +445,6 @@ input[type=text], textarea {
     outline: none;
 }
 
-
 /* --------------- /базовые настройки ---------*/
 
 .button {
@@ -483,13 +482,13 @@ input[type=text], textarea {
 }
 .button:hover,
 .button:focus {
-    color: #ff7d05;
-    border: 2px solid #ff7d05;
-    background-image: none;
-    background-color: white;
-    -webkit-transition: top 1s ease-out 0.5s;
-    -o-transition: top 1s ease-out 0.5s;
-    transition: top 1s ease-out 0.5s;
+    color: white;
+    /*border: 2px solid #ff7d05;*/
+    /*background-image: none;*/
+    /*background-color: white;*/
+    /*-webkit-transition: top 1s ease-out 0.5s;*/
+    /*-o-transition: top 1s ease-out 0.5s;*/
+    /*transition: top 1s ease-out 0.5s;*/
 }
 .button-pure{
     background-image: none;
@@ -800,8 +799,7 @@ div.footer-nav a{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     -webkit-box-align: center;
@@ -809,7 +807,10 @@ div.footer-nav a{
     align-items: center;
 }
 .footer-nav li{
-    margin: 10px 0;
+    margin: 10px 10px;
+}
+.footer-nav li a:hover{
+    color: #999999;
 }
 .footer-links-email{
     text-align: center;
@@ -836,8 +837,6 @@ div.footer-nav a{
     .footer-links-socs a{
         margin: 10px;
     }
-}
-@media all and (max-width: 600px){
     .footer-nav ul{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -846,6 +845,9 @@ div.footer-nav a{
         -ms-flex-pack: distribute;
         justify-content: space-around;
     }
+}
+@media all and (max-width: 600px){
+
 }
 
 /*breadcrumb*/
@@ -2507,8 +2509,9 @@ label.tab.active{
     color: #555555;
 }
 
+
 .main-header{
-    background: url("../img/header_main_bg.png") no-repeat center center fixed;
+    background: url("../img/header_main_bg.png") no-repeat center center;
     background-size: cover;
     min-height: 100vh;
     color: white;
@@ -2696,7 +2699,7 @@ label.tab.active{
     background-position: 100% 100%;
 }
 .main-advantages{
-    background: url("../img/rawpixel-593597-unsplash.jpg") no-repeat center center fixed;
+    background: url("../img/rawpixel-593597-unsplash.jpg") no-repeat center center;
     background-size: cover;
     min-height: 600px;
     color: white;
@@ -2830,10 +2833,10 @@ label.tab.active{
 }
 @media all and (max-width: 630px){
     .main-header-title{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .main-header-description{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         line-height: 32.01px;
     }
     .categories-numbers{
@@ -2856,6 +2859,7 @@ label.tab.active{
         font-size: 17px;
     }
     .main-advantages-title{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
+
