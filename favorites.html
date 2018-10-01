@@ -66,13 +66,30 @@
             <div class="header-search">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-3">
-                            <select name='category' class="header-search-field header-search-category" >
-                                <option value=''>Все курсы</option>
-                                <option value='1'>Категория 1</option>
-                                <option value='2'>Категория 2</option>
-                                <option value='3'>Категория 3</option>
-                            </select>
+                        <div class="col-sm-3 header-search-category-wrap">
+                            <div class="header-search-field custom-select header-search-category">
+                                <select>
+                                    <option value="0">Категория:</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Citroen</option>
+                                    <option value="4">Ford</option>
+                                    <option value="5">Honda</option>
+                                    <option value="6">Jaguar</option>
+                                    <option value="7">Land Rover</option>
+                                    <option value="8">Mercedes</option>
+                                    <option value="9">Mini</option>
+                                    <option value="10">Nissan</option>
+                                    <option value="11">Toyota</option>
+                                    <option value="12">Volvo</option>
+                                </select>
+                            </div>
+                            <!--<select name='category' class="header-search-field header-search-category" >-->
+                            <!--<option class="header-search-category-option" value=''>Все курсы</option>-->
+                            <!--<option class="header-search-category-option" value='1'>Категория 1</option>-->
+                            <!--<option class="header-search-category-option" value='2'>Категория 2</option>-->
+                            <!--<option class="header-search-category-option" value='3'>Категория 3</option>-->
+                            <!--</select>-->
                         </div>
                         <div class="col-sm-5">
                             <form action="#" class="header-search-field header-search-text">
@@ -80,14 +97,19 @@
                                 <button type="submit"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
-                        <div class="col-sm-2">
-                            <select name='category' class="header-search-field" >
-                                <option value='1'>Винница</option>
-                                <option value='2'>Киев</option>
-                                <option value='3'>Одесса</option>
-                            </select>
+                        <div class="col-sm-2 header-search-city">
+                            <div class="header-search-field custom-select">
+                                <select name='category'>
+                                    <option value='0'>Город</option>
+                                    <option value='1'>Винница</option>
+                                    <option value='2'>Киев</option>
+                                    <option value='3'>Одесса</option>
+                                    <option value='4'>Львов</option>
+                                    <option value='4'>Днепр</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-sm-2 header-search-favorite-courses">
                             <div class="header-search-favorite">
                                 <a href="#">
                                     <i class="fa fa-heart"></i>
