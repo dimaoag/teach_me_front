@@ -2486,6 +2486,9 @@ label.tab.active{
 }
 
 /*------favorite-courses------*/
+.favorite-courses{
+    padding-bottom: 50px;
+}
 .favorite-title{
     padding: 10px 0;
 }
