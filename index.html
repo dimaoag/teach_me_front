@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -359,22 +360,36 @@
                                 <div class="filter">
                                     <h4>Цена</h4>
                                     <div class="checkboxes">
-                                        <p id="amount"></p>
-                                        <div id="slider-range" class="price-range" style="margin: 25px 0;"></div>
-                                        <input type="hidden" id="amount1">
-                                        <input type="hidden" id="amount2">
+                                        <!--<input type="hidden" id="hidden_minimum_price" value="0">-->
+                                        <!--<input type="hidden" id="hidden_maximum_price" value="10000">-->
+                                        <!--<p id="price_show">1000 - 10000 грн</p>-->
+                                        <!--<div id="price_range"></div>-->
+
+                                        <!--<p id="amount"></p>-->
+                                        <!--<div id="slider-range" class="price-range" style="margin: 25px 0;"></div>-->
+                                        <!--<input type="hidden" id="min_price">-->
+                                        <!--<input type="hidden" id="max_price">-->
+                                        <div class="price_my_range" id="price_my_range">
+                                        </div>
+                                        <div class="range-inputs">
+                                            <p>от</p>
+                                            <input type="number" id="min_price">
+                                            <p>до</p>
+                                            <input type="number" id="max_price" min="1" value="1">
+                                            <p>грн.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-md-9 search-courses-container">
                             <div class="search-course">
                                 <div class="search-course-img">
                                     <a href="#">
                                         <img src="img/search_course.png" alt="">
                                     </a>
                                     <div class="favorite-img">
-                                        <a href="#" class="favorite-toggle">
+                                        <a href="#" class="favorite-toggle hvr-grow">
                                             <i class="fa fa-heart-o"></i>
                                         </a>
                                     </div>
@@ -383,7 +398,7 @@
                                     <div class="search-course-header">
                                         <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
                                         <div class="favorite">
-                                            <a href="#" class="favorite-toggle">
+                                            <a href="#" class="favorite-toggle hvr-grow">
                                                 <i class="fa fa-heart-o"></i>
                                             </a>
                                             <p>в избранное</p>
@@ -442,7 +457,7 @@
                                         <img src="img/search_course.png" alt="">
                                     </a>
                                     <div class="favorite-img">
-                                        <a href="#" class="favorite-toggle">
+                                        <a href="#" class="favorite-toggle hvr-grow">
                                             <i class="fa fa-heart-o"></i>
                                         </a>
                                     </div>
@@ -451,7 +466,7 @@
                                     <div class="search-course-header">
                                         <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
                                         <div class="favorite">
-                                            <a href="#" class="favorite-toggle">
+                                            <a href="#" class="favorite-toggle hvr-grow">
                                                 <i class="fa fa-heart-o"></i>
                                             </a>
                                             <p>в избранное</p>
@@ -510,7 +525,7 @@
                                         <img src="img/search_course.png" alt="">
                                     </a>
                                     <div class="favorite-img">
-                                        <a href="#" class="favorite-toggle">
+                                        <a href="#" class="favorite-toggle hvr-grow">
                                             <i class="fa fa-heart-o"></i>
                                         </a>
                                     </div>
@@ -519,7 +534,7 @@
                                     <div class="search-course-header">
                                         <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
                                         <div class="favorite">
-                                            <a href="#" class="favorite-toggle">
+                                            <a href="#" class="favorite-toggle hvr-grow">
                                                 <i class="fa fa-heart-o"></i>
                                             </a>
                                             <p>в избранное</p>
@@ -578,7 +593,7 @@
                                         <img src="img/search_course.png" alt="">
                                     </a>
                                     <div class="favorite-img">
-                                        <a href="#" class="favorite-toggle">
+                                        <a href="#" class="favorite-toggle hvr-grow">
                                             <i class="fa fa-heart-o"></i>
                                         </a>
                                     </div>
@@ -587,7 +602,7 @@
                                     <div class="search-course-header">
                                         <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
                                         <div class="favorite">
-                                            <a href="#" class="favorite-toggle">
+                                            <a href="#" class="favorite-toggle hvr-grow">
                                                 <i class="fa fa-heart-o"></i>
                                             </a>
                                             <p>в избранное</p>
@@ -646,7 +661,7 @@
                                         <img src="img/search_course.png" alt="">
                                     </a>
                                     <div class="favorite-img">
-                                        <a href="#" class="favorite-toggle">
+                                        <a href="#" class="favorite-toggle hvr-grow">
                                             <i class="fa fa-heart-o"></i>
                                         </a>
                                     </div>
@@ -655,7 +670,7 @@
                                     <div class="search-course-header">
                                         <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
                                         <div class="favorite">
-                                            <a href="#" class="favorite-toggle">
+                                            <a href="#" class="favorite-toggle hvr-grow">
                                                 <i class="fa fa-heart-o"></i>
                                             </a>
                                             <p>в избранное</p>
@@ -714,7 +729,7 @@
                                         <img src="img/search_course.png" alt="">
                                     </a>
                                     <div class="favorite-img">
-                                        <a href="#" class="favorite-toggle">
+                                        <a href="#" class="favorite-toggle hvr-grow">
                                             <i class="fa fa-heart-o"></i>
                                         </a>
                                     </div>
@@ -723,7 +738,7 @@
                                     <div class="search-course-header">
                                         <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
                                         <div class="favorite">
-                                            <a href="#" class="favorite-toggle">
+                                            <a href="#" class="favorite-toggle hvr-grow">
                                                 <i class="fa fa-heart-o"></i>
                                             </a>
                                             <p>в избранное</p>
@@ -782,7 +797,7 @@
                                         <img src="img/search_course.png" alt="">
                                     </a>
                                     <div class="favorite-img">
-                                        <a href="#" class="favorite-toggle">
+                                        <a href="#" class="favorite-toggle hvr-grow">
                                             <i class="fa fa-heart-o"></i>
                                         </a>
                                     </div>
@@ -791,7 +806,7 @@
                                     <div class="search-course-header">
                                         <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
                                         <div class="favorite">
-                                            <a href="#" class="favorite-toggle">
+                                            <a href="#" class="favorite-toggle hvr-grow">
                                                 <i class="fa fa-heart-o"></i>
                                             </a>
                                             <p>в избранное</p>
@@ -850,7 +865,7 @@
                                         <img src="img/search_course.png" alt="">
                                     </a>
                                     <div class="favorite-img">
-                                        <a href="#" class="favorite-toggle">
+                                        <a href="#" class="favorite-toggle hvr-grow">
                                             <i class="fa fa-heart-o"></i>
                                         </a>
                                     </div>
@@ -859,7 +874,7 @@
                                     <div class="search-course-header">
                                         <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
                                         <div class="favorite">
-                                            <a href="#" class="favorite-toggle">
+                                            <a href="#" class="favorite-toggle hvr-grow">
                                                 <i class="fa fa-heart-o"></i>
                                             </a>
                                             <p>в избранное</p>
@@ -924,7 +939,9 @@
                         <div class="footer">
                             <div class="footer-logo">
                                 <div class="footer-logo-img">
-                                    <img src="img/footer_logo.png" alt="">
+                                    <a href="#">
+                                        <img src="img/footer_logo.png" alt="">
+                                    </a>
                                 </div>
                                 <div class="footer-logo-text">
                                     &copy; 2018 Teach Me
@@ -934,9 +951,7 @@
                                 <ul>
                                     <li><a href="#">Главная</a></li>
                                     <li><a href="#">Курсы</a></li>
-                                    <li><a href="#">О платформе</a></li>
-                                    <li><a href="#">сотрудничество</a></li>
-                                    <li><a href="#">Блог</a></li>
+                                    <li><a href="#">Добавить курс</a></li>
                                 </ul>
                             </div>
                             <div class="footer-links">
@@ -970,6 +985,7 @@
     <script src="js/spartan-multi-image-picker.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

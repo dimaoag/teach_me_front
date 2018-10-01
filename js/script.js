@@ -1,21 +1,22 @@
-$(function() {
-    $( "#slider-range" ).slider({
-        range: true,
-        min: 0,
-        max: 500,
-        values: [ 100, 300 ],
-        slide: function( event, ui ) {
-            $( "#amount" ).html( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-            $( "#amount1" ).val(ui.values[ 0 ]);
-            $( "#amount2" ).val(ui.values[ 1 ]);
-        }
-    });
-    $( "#amount" ).html( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-        " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-});
+// $(function() {
+//     $( "#slider-range" ).slider({
+//         range: true,
+//         min: 100,
+//         max: 10000,
+//         step: 100,
+//         values: [ 100, 10000 ],
+//         slide: function( event, ui ) {
+//             $( "#amount" ).html( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+//             $( "#min_price" ).val(ui.values[ 0 ]);
+//             $( "#max_price" ).val(ui.values[ 1 ]);
+//         }
+//     });
+//     $( "#amount" ).html( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+//         " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+// });
 
 $('.filter-header').on('click', function () {
-    $(this).find( ".toggle" ).toggle(10,function() {
+    $(this).find( ".toggle" ).toggle(1,function() {
         $(this).find('.fa-plus').show();
         $(this).find('.fa-minus').hide();
     });
@@ -458,3 +459,97 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+
+if ($('div').is('#price_my_range')) {
+    var keypressSlider = document.getElementById('price_my_range');
+    var input0 = document.getElementById('min_price');
+    var input1 = document.getElementById('max_price');
+    var inputs = [input0, input1];
+
+    noUiSlider.create(keypressSlider, {
+        start: [100, 10000],
+        connect: true,
+        // direction: 'rtl',
+        // tooltips: [true, wNumb({decimals: 1})],
+        range: {
+            'min': [100],
+            '1%': 200,
+            'max': 10000
+        }
+    });
+
+    function setSliderHandle(i, value) {
+        var r = [null, null];
+        r[i] = value;
+        keypressSlider.noUiSlider.set(r);
+    }
+
+// Listen to keydown events on the input field.
+    inputs.forEach(function (input, handle) {
+
+        input.addEventListener('change', function () {
+            setSliderHandle(handle, this.value);
+        });
+
+        input.addEventListener('keydown', function (e) {
+
+            var values = keypressSlider.noUiSlider.get();
+            var value = Number(values[handle]);
+
+            // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
+            var steps = keypressSlider.noUiSlider.steps();
+
+            // [down, up]
+            var step = steps[handle];
+
+            var position;
+
+            // 13 is enter,
+            // 38 is key up,
+            // 40 is key down.
+            switch (e.which) {
+
+                case 13:
+                    setSliderHandle(handle, this.value);
+                    break;
+
+                case 38:
+
+                    // Get step to go increase slider value (up)
+                    position = step[1];
+
+                    // false = no step is set
+                    if (position === false) {
+                        position = 1;
+                    }
+
+                    // null = edge of slider
+                    if (position !== null) {
+                        setSliderHandle(handle, value + position);
+                    }
+
+                    break;
+
+                case 40:
+
+                    position = step[0];
+
+                    if (position === false) {
+                        position = 1;
+                    }
+
+                    if (position !== null) {
+                        setSliderHandle(handle, value - position);
+                    }
+
+                    break;
+            }
+        });
+    });
+
+
+    keypressSlider.noUiSlider.on('update', function (values, handle) {
+        inputs[handle].value = values[handle];
+    });
+}

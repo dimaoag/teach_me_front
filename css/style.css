@@ -744,7 +744,6 @@ input[type=text], textarea {
 /*footer*/
 footer{
     background-color: #191919;
-
 }
 .footer{
     display: -webkit-box;
@@ -1052,6 +1051,9 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:focus, span.ui-slider-handl
 /*filter*/
 
 /*search-product*/
+.search-courses-container{
+    padding-bottom: 50px;
+}
 .search-course{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1272,7 +1274,7 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:focus, span.ui-slider-handl
 @media all and (max-width: 450px){
     .price{
         width: 100%;
-        text-align: center;
+        text-align: right;
         margin: 15px 0;
     }
     .favorite-img{
@@ -2863,3 +2865,34 @@ label.tab.active{
     }
 }
 
+.price_my_range{
+    margin: 30px 0;
+    padding: 0 15px;
+}
+.noUi-connect {
+    background-color: #933ec5;;
+}
+.noUi-handle{
+    outline: none;
+}
+.range-inputs{
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+.range-inputs input{
+    width: 80px;
+    border: none;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #999999;
+    margin: 0 10px;
+}
+.range-inputs input[type=number]::-webkit-inner-spin-button,
+.range-inputs input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.range-inputs input:focus{
+    outline: none;
+}
