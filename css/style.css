@@ -1290,7 +1290,7 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:focus, span.ui-slider-handl
 
 /*login*/
 .bg-login{
-    background: url('../img/bg-01.jpg') no-repeat center center fixed;
+    background: url('../img/bg-01.jpg') no-repeat center center;
 }
 .btn-login{
     color: white;
