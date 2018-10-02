@@ -1,20 +1,5 @@
-// $(function() {
-//     $( "#slider-range" ).slider({
-//         range: true,
-//         min: 100,
-//         max: 10000,
-//         step: 100,
-//         values: [ 100, 10000 ],
-//         slide: function( event, ui ) {
-//             $( "#amount" ).html( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-//             $( "#min_price" ).val(ui.values[ 0 ]);
-//             $( "#max_price" ).val(ui.values[ 1 ]);
-//         }
-//     });
-//     $( "#amount" ).html( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-//         " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-// });
 
+/*-----accordion-in-search-page--------*/
 $('.filter-header').on('click', function () {
     $(this).find( ".toggle" ).toggle(1,function() {
         $(this).find('.fa-plus').show();
@@ -22,6 +7,7 @@ $('.filter-header').on('click', function () {
     });
 });
 
+/*-----tabs-login-signup-forms--------*/
 $(document).ready(function () {
     $('.dws-form').on('click', '.tab', function () {
         $('.dws-form').find('.active').removeClass('active');
@@ -54,6 +40,7 @@ $('.open-popup-phones_md').magnificPopup({
     midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 });
 
+/*-----gallery-in-company-page--------*/
 $('.center').slick({
     centerMode: true,
     infinite: true,
@@ -78,6 +65,7 @@ $('.center').slick({
     ],
 });
 
+/*-----open-images-in-popup--------*/
 $('.clip a').magnificPopup({
     type: 'image'
     // other options
@@ -92,6 +80,7 @@ $('.accordion-title').on('click', function () {
 });
 
 
+/*-----related-courses--------*/
 $('.course-related-carousel').slick({
     infinite: true,
     slidesToShow: 4,
@@ -136,6 +125,7 @@ $('.create-review').magnificPopup({
 });
 
 
+/*-----favorite-toggle--------*/
 $('.favorite-toggle').on('click', function () {
     if ($(this).html().trim() == '<i class="fa fa-heart-o"></i>') {
         $(this).html('<i class="fa fa-heart"></i>');
@@ -158,7 +148,7 @@ $( ".feedback-form" ).submit(function( event ) {
     });
 });
 
-
+/*-----tabs-cabinet-company--------*/
 $(document).ready(function () {
     $('.cabinet-company').on('click', '.tab-company', function () {
         $('.cabinet-company').find('.active').removeClass('active');
@@ -168,11 +158,10 @@ $(document).ready(function () {
 });
 
 
+/*-----add-course-form--------*/
 
 $(document).ready(function(){
-
     $('#btn_main_info').click(function(){
-
         var error_photo = '';
         var error_name = '';
         var error_city = '';
@@ -324,20 +313,29 @@ $(document).ready(function(){
 
 });
 
+/*-----add-course-photo-course--------*/
 if ($('div').is('#photo_course')) {
     $("#photo_course").spartanMultiImagePicker({
         fieldName:  'photo_course',
         maxCount : 1,
+        rowHeight : '150px',
+        groupClassName : 'col-sm-4 col-xs-6',
+        dropFileLabel:    'Drop file here',
     });
 }
 
+/*-----add-course-photo-gallery--------*/
 if ($('div').is('#gallery')) {
     $("#gallery").spartanMultiImagePicker({
         fieldName:  'galleryPhotos[]',
         maxCount : 10,
+        rowHeight : '170px',
+        groupClassName : 'col-sm-3 col-xs-6',
+        dropFileLabel:    'Drop file here',
     });
 }
 
+/*-----company-add-photo-profile--------*/
 if ($('div').is('#photo_profile_company')) {
     $("#photo_profile_company").spartanMultiImagePicker({
         fieldName:  'photo_profile_company',
@@ -347,34 +345,22 @@ if ($('div').is('#photo_profile_company')) {
     });
 }
 
-
-// $('.orders-slider-titles').slick({
+/*-----carousel in orders small-screen--------*/
+// $('.orders-slider').slick({
+//     dots: true,
+//     infinite: true,
+//     speed: 300,
 //     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     fade: true,
-//     asNavFor: '.orders-slider-container'
-// });
-// $('.orders-slider-container').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     // fade: true,
-//     asNavFor: '.orders-slider-titles'
+//     adaptiveHeight: true
 // });
 
-$('.orders-slider').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true
-});
-
+/*-----open-order-popup--------*/
 $('.open-order-popup').magnificPopup({
     type:'inline',
     midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 });
 
+/*-----carousel in orders small-screen--------*/
 if ($('div').is('.owl-carousel')) {
     $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
@@ -386,6 +372,8 @@ if ($('div').is('.owl-carousel')) {
 }
 
 
+
+/*----custom-select-----*/
 
 var x, i, j, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
@@ -460,7 +448,6 @@ function closeAllSelect(elmnt) {
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
 
-
 if ($('div').is('#price_my_range')) {
     var keypressSlider = document.getElementById('price_my_range');
     var input0 = document.getElementById('min_price');
@@ -478,77 +465,55 @@ if ($('div').is('#price_my_range')) {
             'max': 10000
         }
     });
-
     function setSliderHandle(i, value) {
         var r = [null, null];
         r[i] = value;
         keypressSlider.noUiSlider.set(r);
     }
-
 // Listen to keydown events on the input field.
     inputs.forEach(function (input, handle) {
-
         input.addEventListener('change', function () {
             setSliderHandle(handle, this.value);
         });
-
         input.addEventListener('keydown', function (e) {
-
             var values = keypressSlider.noUiSlider.get();
             var value = Number(values[handle]);
-
             // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
             var steps = keypressSlider.noUiSlider.steps();
-
             // [down, up]
             var step = steps[handle];
-
             var position;
-
             // 13 is enter,
             // 38 is key up,
             // 40 is key down.
             switch (e.which) {
-
                 case 13:
                     setSliderHandle(handle, this.value);
                     break;
-
                 case 38:
-
                     // Get step to go increase slider value (up)
                     position = step[1];
-
                     // false = no step is set
                     if (position === false) {
                         position = 1;
                     }
-
                     // null = edge of slider
                     if (position !== null) {
                         setSliderHandle(handle, value + position);
                     }
-
                     break;
-
                 case 40:
-
                     position = step[0];
-
                     if (position === false) {
                         position = 1;
                     }
-
                     if (position !== null) {
                         setSliderHandle(handle, value - position);
                     }
-
                     break;
             }
         });
     });
-
-
     keypressSlider.noUiSlider.on('update', function (values, handle) {
         inputs[handle].value = values[handle];
     });

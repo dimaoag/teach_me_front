@@ -2437,7 +2437,7 @@ label.tab.active{
     padding-left: 15px;
 }
 .step-2 h2{
-    padding-left: 15px;
+    padding: 10px 0;
 }
 .step-2 textarea{
     font-size: 1rem;
@@ -2453,6 +2453,10 @@ label.tab.active{
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+.add-course-select{
+    padding: 10px 0;
+    border-bottom: 1px solid #933ec5;
 }
 @media all and (max-width: 500px){
     .add-course .nav-item{
