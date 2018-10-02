@@ -340,8 +340,9 @@ if ($('div').is('#photo_profile_company')) {
     $("#photo_profile_company").spartanMultiImagePicker({
         fieldName:  'photo_profile_company',
         maxCount : 1,
-        rowHeight : '200px',
-        groupClassName : 'col-xs-6',
+        rowHeight : '170px',
+        groupClassName : 'col-sm-4 col-xs-7',
+        dropFileLabel:    'Drop file here',
     });
 }
 
