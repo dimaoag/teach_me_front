@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/hover.css">
     <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel='stylesheet' href='css/sm-core-css.css' type='text/css' />
+    <link rel='stylesheet' href='css/sm-clean/sm-clean.css'  type='text/css' />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -68,23 +70,58 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-3 header-search-category-wrap">
-                            <div class="header-search-field custom-select header-search-category">
-                                <select>
-                                    <option value="0">Категория:</option>
-                                    <option value="1">Audi</option>
-                                    <option value="2">BMW</option>
-                                    <option value="3">Citroen</option>
-                                    <option value="4">Ford</option>
-                                    <option value="5">Honda</option>
-                                    <option value="6">Jaguar</option>
-                                    <option value="7">Land Rover</option>
-                                    <option value="8">Mercedes</option>
-                                    <option value="9">Mini</option>
-                                    <option value="10">Nissan</option>
-                                    <option value="11">Toyota</option>
-                                    <option value="12">Volvo</option>
-                                </select>
-                            </div>
+                            <ul id="main-menu" class="sm sm-vertical sm-clean header-search-field header-search-menu">
+                                <li class="category-parent"><a href="#" class="first-line">Категория</a>
+                                    <ul>
+                                        <li><a href="#">Item 2-1</a>
+                                            <ul>
+                                                <li><a href="#">Item 2-2</a></li>
+                                                <li><a href="#">Item 2-3</a></li>
+                                                <li><a href="#">Item 2-3</a></li>
+                                                <li><a href="#">Item 2-3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Item 2-2</a></li>
+                                        <li><a href="#">Item 2-3</a></li>
+                                        <li><a href="#">Item 2-3</a>
+                                            <ul>
+                                                <li><a href="#">Item 2-2</a></li>
+                                                <li><a href="#">Item 2-3</a>
+                                                    <ul>
+                                                        <li><a href="#">Item 2-2</a></li>
+                                                        <li><a href="#">Item 2-3</a></li>
+                                                        <li><a href="#">Item 2-3</a></li>
+                                                        <li><a href="#">Item 2-3</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Item 2-3</a></li>
+                                                <li><a href="#">Item 2-3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Item 2-3</a></li>
+                                        <li><a href="#">Item 2-3</a></li>
+                                        <li><a href="#">Item 2-3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <!--<div class="header-search-field custom-select header-search-category">-->
+                            <!--<select>-->
+                            <!--<option value="0">Select car:</option>-->
+                            <!--<option value="1">Audi</option>-->
+                            <!--<option value="2">BMW</option>-->
+                            <!--<option value="3">Citroen</option>-->
+                            <!--<option value="4">Ford</option>-->
+                            <!--<option value="5">Honda</option>-->
+                            <!--<option value="6">Jaguar</option>-->
+                            <!--<option value="7">Land Rover</option>-->
+                            <!--<option value="8">Mercedes</option>-->
+                            <!--<option value="9">Mini</option>-->
+                            <!--<option value="10">Nissan</option>-->
+                            <!--<option value="11">Toyota</option>-->
+                            <!--<option value="12">Volvo</option>-->
+                            <!--</select>-->
+                            <!--</div>-->
                             <!--<select name='category' class="header-search-field header-search-category" >-->
                             <!--<option class="header-search-category-option" value=''>Все курсы</option>-->
                             <!--<option class="header-search-category-option" value='1'>Категория 1</option>-->
@@ -98,10 +135,9 @@
                                 <button type="submit"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
-                        <div class="col-sm-2 header-search-city">
+                        <div class="col-sm-3 header-search-city">
                             <div class="header-search-field custom-select">
                                 <select name='category'>
-                                    <option value='0'>Город</option>
                                     <option value='1'>Винница</option>
                                     <option value='2'>Киев</option>
                                     <option value='3'>Одесса</option>
@@ -110,7 +146,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-sm-2 header-search-favorite-courses">
+                        <div class="col-sm-1 header-search-favorite-courses">
                             <div class="header-search-favorite">
                                 <a href="#">
                                     <i class="fa fa-heart"></i>
@@ -462,6 +498,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/nouislider.min.js"></script>
+    <script src="js/jquery.smartmenus.min.js" type="text/javascript"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
