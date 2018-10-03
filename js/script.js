@@ -519,3 +519,7 @@ if ($('div').is('#price_my_range')) {
         inputs[handle].value = values[handle];
     });
 }
+
+$(function() {
+    $('#main-menu').smartmenus();
+});

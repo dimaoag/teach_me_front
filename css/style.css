@@ -728,12 +728,31 @@ input[type=text], textarea {
 .header-favorite-courses{
     display: none!important;
 }
+.header-search-menu, .header-search-menu ul{
+    color: white;
+    background-color: #fe8c14;
+    background-image: -webkit-linear-gradient(285deg, #ffc24a 0%, #fe840c 100%);
+    background-image: -o-linear-gradient(285deg, #ffc24a 0%, #fe840c 100%);
+    background-image: linear-gradient(-195deg, #ffc24a 0%, #fe840c 100%);
+}
+.header-search-menu a{
+    color: white!important;
+}
+.header-search-menu a:hover{
+    color:black!important;
+}
+a.category-parent{
+    padding: 0 10px!important;
+}
 @media all and (max-width: 767px){
     .header-favorite-courses{
         display: block!important;
     }
     .header-search-favorite-courses{
         display: none;
+    }
+    a.category-parent{
+        padding: 10px 20px!important;
     }
 }
 /*-------main---------*/
@@ -1291,7 +1310,7 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:focus, span.ui-slider-handl
 
 /*login*/
 .bg-login{
-    background: url('../img/bg-01.jpg') no-repeat center center;
+    background: url('../img/bg_login.jpg') no-repeat center center;
 }
 .btn-login{
     color: white;
@@ -2917,3 +2936,4 @@ label.tab.active{
 .range-inputs input:focus{
     outline: none;
 }
+
