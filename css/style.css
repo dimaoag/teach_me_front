@@ -728,21 +728,37 @@ input[type=text], textarea {
 .header-favorite-courses{
     display: none!important;
 }
-.header-search-menu, .header-search-menu ul{
-    color: white;
+.header-search-menu{
+    /*color: white;*/
+    /*background-color: #fe8c14;*/
+    /*background-image: -webkit-linear-gradient(285deg, #ffc24a 0%, #fe840c 100%);*/
+    /*background-image: -o-linear-gradient(285deg, #ffc24a 0%, #fe840c 100%);*/
+    /*background-image: linear-gradient(-195deg, #ffc24a 0%, #fe840c 100%);*/
+}
+/*.header-search-menu a{*/
+    /*color: white!important;*/
+/*}*/
+/*.header-search-menu a:hover{*/
+    /*color:black!important;*/
+/*}*/
+.header-search-menu{
+    padding: 0!important;
+
+}
+.category-parent{
+    border-radius: 5px!important;
+    color: white!important;
     background-color: #fe8c14;
     background-image: -webkit-linear-gradient(285deg, #ffc24a 0%, #fe840c 100%);
     background-image: -o-linear-gradient(285deg, #ffc24a 0%, #fe840c 100%);
     background-image: linear-gradient(-195deg, #ffc24a 0%, #fe840c 100%);
 }
-.header-search-menu a{
-    color: white!important;
+.category-parent > .first-line{
+    color: white;
+    /*padding: 0 10px!important;*/
 }
-.header-search-menu a:hover{
-    color:black!important;
-}
-a.category-parent{
-    padding: 0 10px!important;
+.first-line  .sub-arrow {
+    border-color: transparent transparent transparent #ffffff;
 }
 @media all and (max-width: 767px){
     .header-favorite-courses{
@@ -751,8 +767,11 @@ a.category-parent{
     .header-search-favorite-courses{
         display: none;
     }
-    a.category-parent{
-        padding: 10px 20px!important;
+    .category-parent > .first-line{
+        color: black;
+    }
+    .category-parent{
+        background: none;
     }
 }
 /*-------main---------*/
@@ -2741,7 +2760,7 @@ label.tab.active{
     background-position: 100% 100%;
 }
 .main-advantages{
-    background: url("../img/rawpixel-593597-unsplash.jpg") no-repeat center center;
+    background: url("../img/bg_adva.jpg") no-repeat center center;
     background-size: cover;
     min-height: 600px;
     color: white;

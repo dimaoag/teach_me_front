@@ -520,6 +520,8 @@ if ($('div').is('#price_my_range')) {
     });
 }
 
-$(function() {
-    $('#main-menu').smartmenus();
-});
+if ($('ul').is('#main-menu')) {
+    $(function() {
+        $('#main-menu').smartmenus();
+    });
+}
