@@ -498,10 +498,11 @@ input[type=text], textarea {
     outline: none;
     font-size: 1rem;
 }
-.button-pure:hover, .button-pure:focus{
-    background-color: white;
-    border-color: #933ec5;
-    color: #933ec5;
+.button-pure:hover, .button-pure:focus {
+    /*background-color: white;*/
+    /*border-color: #933ec5;*/
+    /*color: #933ec5;*/
+    color: white;
     outline: none;
 }
 
@@ -2511,8 +2512,11 @@ label.tab.active{
 }
 
 /*------cabinet-user------*/
+.cabinet-user{
+    padding: 15px 15px 50px 15px;
+}
 .cabinet-user h1{
-    padding-bottom: 20px;
+    padding: 20px 0 40px 0;
 }
 @media all and (max-width: 767px){
     .cabinet-user{
